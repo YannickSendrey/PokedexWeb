@@ -8,12 +8,14 @@ CREATE TABLE "pokemon" (
   "attackSpe" int,
   "defenseSpe" int,
   "speed" int,
-  "number" int
+  "number" int,
+  "region" varchar(255)
 );
 
 CREATE TABLE "type" (
   "id" int PRIMARY KEY,
-  "name" varchar(255) NOT NULL
+  "name" varchar(255) NOT NULL,
+  "color" varchar(255) NOT NULL
 );
 
 CREATE TABLE "user" (
