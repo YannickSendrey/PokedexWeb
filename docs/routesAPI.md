@@ -1,0 +1,11 @@
+# API doc
+
+| Number | Endpoint | HTTP Method | Controller | Method  | Description | Data sent |
+|--|--|--|--|--|--|--|
+| 1 | `/api/pokemons` | GET | PokemonController | list() |  Get all pokemons datas | - |
+| 2 | `/api/pokemons/[id]` | GET | PokemonController | find(id) | Get data from a `id` pokemon | – |
+| 3 | `/api/pokemons/[region]` | GET | PokemonController | list(region) | Get all pokemons from a specific `region` datas | - |
+| 4 | `/api/user/register`| POST | UserController | create | Create a new user | username, password |
+| 5 | `/api/user/sign-in` | GET | UserController | find(id) | Check if a user with input credentials exist | - |
+| 6 | `/api/pokemons/add` | POST | PokemonController | addToFavorite(userId, pokemonId) | Add a pokemon to team | user_id & pokemon_id |
+| 7 | `/api/pokemons/delete` | DELETE | PokemonController | removeFromFavorite(userId, pokemonId) | Remove a pokemon from team | user_id & pokemon_id |  
