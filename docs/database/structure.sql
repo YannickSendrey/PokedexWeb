@@ -1,5 +1,5 @@
 CREATE TABLE "pokemon" (
-  "id" int PRIMARY KEY,
+  "id" serial PRIMARY KEY,
   "name" varchar(255) NOT NULL,
   "picture" varchar(255),
   "hp" int,
@@ -13,13 +13,13 @@ CREATE TABLE "pokemon" (
 );
 
 CREATE TABLE "type" (
-  "id" int PRIMARY KEY,
+  "id" serial PRIMARY KEY,
   "name" varchar(255) NOT NULL,
   "color" varchar(255) NOT NULL
 );
 
 CREATE TABLE "user" (
-  "id" int PRIMARY KEY,
+  "id" serial PRIMARY KEY,
   "username" varchar(255) NOT NULL,
   "password" varchar(255) NOT NULL
 );
