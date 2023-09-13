@@ -11,6 +11,7 @@ const getUrl = async () => {
             console.log(jsonResponse);
             const img = document.createElement('img');
             img.src = jsonResponse.picture;
+            img.style = 'width: 50%';
             root.appendChild(img);
         }
     } catch (error) {
