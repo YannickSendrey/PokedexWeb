@@ -2,7 +2,8 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\TestController;
+use App\Http\Controllers\PokemonController;
+use App\Models\Pokemon;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +20,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/test/{id}', [TestController::class, 'test']);
+Route::get('/pokemons', [PokemonController::class, 'list']);
+Route::get('/pokemons/region/{region}', [PokemonController::class, 'list']);
+Route::get('/pokemons/{id}', [PokemonController::class, 'find'])->where('id', '[0-9]+');
