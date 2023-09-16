@@ -1,3 +1,3 @@
 # PokedexWeb
 
-TO DO ! WIP
+TO DO ! working on this project atm
