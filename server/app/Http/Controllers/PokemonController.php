@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\User;
 use App\Models\Pokemon;
+use Illuminate\Http\Request;
 
 class PokemonController extends Controller {
 
@@ -35,5 +36,27 @@ class PokemonController extends Controller {
         }
 
         return $pokemon;
+    }
+
+    public function addToFavorite(Request $request) {
+
+        $request->validate([
+            'pokemonId' => 'required',
+            'userId' => 'required',
+        ]);
+
+        $user = User::find($request->input('userId'));
+        if (!$user) {
+            return response()->json('No User matches this id...', 404);
+        }
+
+        $pokemon = Pokemon::find($request->input('pokemonId'));
+        if (!$pokemon) {
+            return response()->json('No Pokemon matches this id...', 404);
+        }
+
+        // voir si je peux faire ça mais avec le # au lieu de l'id ? (ou pas ?)
+        $user->pokemons()->attach($pokemon);
+        return response()->json('This pokemon has been added to your favorites !', 201);
     }
 }

@@ -23,3 +23,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/pokemons', [PokemonController::class, 'list']);
 Route::get('/pokemons/region/{region}', [PokemonController::class, 'list']);
 Route::get('/pokemons/{id}', [PokemonController::class, 'find'])->where('id', '[0-9]+');
+
+Route::post('/pokemons/add', [PokemonController::class, 'addToFavorite']);
