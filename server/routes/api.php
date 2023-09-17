@@ -25,3 +25,4 @@ Route::get('/pokemons/region/{region}', [PokemonController::class, 'list']);
 Route::get('/pokemons/{id}', [PokemonController::class, 'find'])->where('id', '[0-9]+');
 
 Route::post('/pokemons/add', [PokemonController::class, 'addToFavorite']);
+Route::delete('/pokemons/remove', [PokemonController::class, 'deleteFromFavorite']);

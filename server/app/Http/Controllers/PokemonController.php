@@ -28,8 +28,8 @@ class PokemonController extends Controller {
         }
     }
 
-    public function find($id) {
-        $pokemon = Pokemon::find($id);
+    public function find($number) {
+        $pokemon = Pokemon::find($number);
 
         if (!$pokemon) {
             return response()->json('No Pokemon matches this id...', 404);
@@ -58,5 +58,39 @@ class PokemonController extends Controller {
         // voir si je peux faire ça mais avec le # au lieu de l'id ? (ou pas ?)
         $user->pokemons()->attach($pokemon);
         return response()->json('This pokemon has been added to your favorites !', 201);
+    }
+
+    public function deleteFromFavorite(Request $request) {
+        // get values from url params and validate them
+        $userId = $request->query('userId');
+        $pokemonId = $request->query('pokemonId');
+
+        $request->validate([
+            'userId' => 'required',
+            'pokemonId' => 'required',
+        ]);
+
+        $user = User::find($request->input('userId'));
+        if (!$user) {
+            return response()->json('No User matches this id...', 404);
+        }
+
+        $pokemon = Pokemon::find($request->input('pokemonId'));
+        if (!$pokemon) {
+            return response()->json('No Pokemon matches this id...', 404);
+        }
+
+        // check if there is a row with userId matched with pokemonId
+        $rowExist = User::find($userId)->pokemons()->wherePivot('pokemon_id', $pokemonId)->exists();
+
+        if (!$rowExist) {
+            return response()->json("This pokemon i'snt in your favorites yet...", 404);
+        }
+
+
+
+        $user->pokemons()->detach($pokemon);
+
+        return response()->json('This pokemon has been removed from your favorites !', 200);
     }
 }
