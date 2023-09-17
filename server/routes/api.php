@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PokemonController;
+use App\Http\Controllers\UserController;
 use App\Models\Pokemon;
 
 /*
@@ -26,3 +27,7 @@ Route::get('/pokemons/{id}', [PokemonController::class, 'find'])->where('id', '[
 
 Route::post('/pokemons/add', [PokemonController::class, 'addToFavorite']);
 Route::delete('/pokemons/remove', [PokemonController::class, 'deleteFromFavorite']);
+
+Route::post('/users/add', [UserController::class, 'create']);
+Route::post('/users/sign-in', [UserController::class, 'checkIfUserExists']);
+Route::post('/logout', [UserController::class, 'logout']);
