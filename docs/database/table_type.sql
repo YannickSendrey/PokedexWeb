@@ -1,4 +1,4 @@
-INSERT INTO public."type" (name,color) VALUES
+INSERT INTO public."types" (name,color) VALUES
 	 ('Bug','#94BC4A'),
 	 ('Dark','#736C75'),
 	 ('Dragon','#6A7BAF'),
@@ -9,7 +9,7 @@ INSERT INTO public."type" (name,color) VALUES
 	 ('Flying','#7DA6DE'),
 	 ('Ghost','#846AB6'),
 	 ('Grass','#71C558');
-INSERT INTO public."type" (name,color) VALUES
+INSERT INTO public."types" (name,color) VALUES
 	 ('Ground','#CC9F4F'),
 	 ('Ice','#70CBD4'),
 	 ('Normal','#AAB09F'),

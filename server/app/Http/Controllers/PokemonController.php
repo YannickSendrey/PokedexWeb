@@ -62,20 +62,15 @@ class PokemonController extends Controller {
 
     public function deleteFromFavorite(Request $request) {
         // get values from url params and validate them
-        $userId = $request->query('userId');
-        $pokemonId = $request->query('pokemonId');
+        $userId = $request->route('userId');
+        $pokemonId = $request->route('pokemonId');
 
-        $request->validate([
-            'userId' => 'required',
-            'pokemonId' => 'required',
-        ]);
-
-        $user = User::find($request->input('userId'));
+        $user = User::find($userId);
         if (!$user) {
             return response()->json('No User matches this id...', 404);
         }
 
-        $pokemon = Pokemon::find($request->input('pokemonId'));
+        $pokemon = Pokemon::find($pokemonId);
         if (!$pokemon) {
             return response()->json('No Pokemon matches this id...', 404);
         }
