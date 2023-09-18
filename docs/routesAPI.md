@@ -8,5 +8,5 @@
 | 4      | `/api/users/register`                   | POST        | UserController    | create             | Create a new user                            | username, password   |
 | 5      | `/api/users/sign-in`                    | POST        | UserController    | checkIfUserExists  | Check if a user with input credentials exist | -                    |
 | 6      | `/api/users/logout`                     | POST        | UserController    | logout             | Logout user                                  | -                    |
-| 6      | `/api/pokemons/add`                     | POST        | PokemonController | addToFavorite      | Add a pokemon to team                        | user_id & pokemon_id |
-| 7      | `/pokemons/remove/{userId}/{pokemonId}` | DELETE      | PokemonController | removeFromFavorite | Remove a pokemon from team                   | user_id & pokemon_id |
+| 7      | `/api/pokemons/add`                     | POST        | PokemonController | addToFavorite      | Add a pokemon to team                        | user_id & pokemon_id |
+| 8      | `/pokemons/remove/{userId}/{pokemonId}` | DELETE      | PokemonController | removeFromFavorite | Remove a pokemon from team                   | user_id & pokemon_id |
