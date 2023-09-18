@@ -1,4 +1,4 @@
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Bulbasaur','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png',45,49,49,65,65,45,1,'Kanto'),
 	 ('Ivysaur','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png',60,62,63,80,80,60,2,'Kanto'),
 	 ('Venusaur','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png',80,82,83,100,100,80,3,'Kanto'),
@@ -9,7 +9,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Wartortle','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/8.png',59,63,80,65,80,58,8,'Kanto'),
 	 ('Blastoise','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png',79,83,100,85,105,78,9,'Kanto'),
 	 ('Caterpie','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10.png',45,30,35,20,20,45,10,'Kanto');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Metapod','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/11.png',50,20,55,25,25,30,11,'Kanto'),
 	 ('Butterfree','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/12.png',60,45,50,80,80,70,12,'Kanto'),
 	 ('Weedle','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/13.png',40,35,30,20,20,50,13,'Kanto'),
@@ -20,7 +20,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Pidgeot','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/18.png',83,80,75,70,70,91,18,'Kanto'),
 	 ('Rattata','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/19.png',30,56,35,25,35,72,19,'Kanto'),
 	 ('Raticate','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/20.png',55,81,60,50,70,97,20,'Kanto');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Spearow','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/21.png',40,60,30,31,31,70,21,'Kanto'),
 	 ('Fearow','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/22.png',65,90,65,61,61,100,22,'Kanto'),
 	 ('Ekans','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/23.png',35,60,44,40,54,55,23,'Kanto'),
@@ -31,7 +31,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Sandslash','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/28.png',75,100,110,45,55,65,28,'Kanto'),
 	 ('Nidoran♀','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/29.png',55,47,52,40,40,41,29,'Kanto'),
 	 ('Nidorina','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/30.png',70,62,67,55,55,56,30,'Kanto');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Nidoqueen','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/31.png',90,82,87,75,85,76,31,'Kanto'),
 	 ('Nidoran♂','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/32.png',46,57,40,40,40,50,32,'Kanto'),
 	 ('Nidorino','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/33.png',61,72,57,55,55,65,33,'Kanto'),
@@ -42,7 +42,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Ninetales','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/38.png',73,76,75,81,100,100,38,'Kanto'),
 	 ('Jigglypuff','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/39.png',115,45,20,45,25,20,39,'Kanto'),
 	 ('Wigglytuff','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/40.png',140,70,45,75,50,45,40,'Kanto');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Zubat','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/41.png',40,45,35,30,40,55,41,'Kanto'),
 	 ('Golbat','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/42.png',75,80,70,65,75,90,42,'Kanto'),
 	 ('Oddish','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/43.png',45,50,55,75,65,30,43,'Kanto'),
@@ -53,7 +53,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Venonat','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/48.png',60,55,50,40,55,45,48,'Kanto'),
 	 ('Venomoth','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/49.png',70,65,60,90,75,90,49,'Kanto'),
 	 ('Diglett','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/50.png',10,55,25,35,45,95,50,'Kanto');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Dugtrio','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/51.png',35,80,50,50,70,120,51,'Kanto'),
 	 ('Meowth','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/52.png',40,45,35,40,40,90,52,'Kanto'),
 	 ('Persian','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/53.png',65,70,60,65,65,115,53,'Kanto'),
@@ -64,7 +64,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Growlithe','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/58.png',55,70,45,70,50,60,58,'Kanto'),
 	 ('Arcanine','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/59.png',90,110,80,100,80,95,59,'Kanto'),
 	 ('Poliwag','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/60.png',40,50,40,40,40,90,60,'Kanto');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Poliwhirl','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/61.png',65,65,65,50,50,90,61,'Kanto'),
 	 ('Poliwrath','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/62.png',90,85,95,70,90,70,62,'Kanto'),
 	 ('Abra','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/63.png',25,20,15,105,55,90,63,'Kanto'),
@@ -75,7 +75,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Machamp','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/68.png',90,130,80,65,85,55,68,'Kanto'),
 	 ('Bellsprout','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/69.png',50,75,35,70,30,40,69,'Kanto'),
 	 ('Weepinbell','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/70.png',65,90,50,85,45,55,70,'Kanto');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Victreebel','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/71.png',80,105,65,100,60,70,71,'Kanto'),
 	 ('Tentacool','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/72.png',40,40,35,50,100,70,72,'Kanto'),
 	 ('Tentacruel','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/73.png',80,70,65,80,120,100,73,'Kanto'),
@@ -86,7 +86,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Rapidash','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/78.png',65,100,70,80,80,105,78,'Kanto'),
 	 ('Slowpoke','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/79.png',90,65,65,40,40,15,79,'Kanto'),
 	 ('Slowbro','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/80.png',95,75,110,100,80,30,80,'Kanto');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Magnemite','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/81.png',25,35,70,95,55,45,81,'Kanto'),
 	 ('Magneton','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/82.png',50,60,95,120,70,70,82,'Kanto'),
 	 ('Farfetch''d','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/83.png',52,65,55,58,62,60,83,'Kanto'),
@@ -97,7 +97,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Grimer','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/88.png',80,80,50,40,50,25,88,'Kanto'),
 	 ('Muk','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/89.png',105,105,75,65,100,50,89,'Kanto'),
 	 ('Shellder','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/90.png',30,65,100,45,25,40,90,'Kanto');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Cloyster','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/91.png',50,95,180,85,45,70,91,'Kanto'),
 	 ('Gastly','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/92.png',30,35,30,100,35,80,92,'Kanto'),
 	 ('Haunter','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/93.png',45,50,45,115,55,95,93,'Kanto'),
@@ -108,7 +108,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Krabby','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/98.png',30,105,90,25,25,50,98,'Kanto'),
 	 ('Kingler','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/99.png',55,130,115,50,50,75,99,'Kanto'),
 	 ('Voltorb','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/100.png',40,30,50,55,55,100,100,'Kanto');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Electrode','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/101.png',60,50,70,80,80,140,101,'Kanto'),
 	 ('Exeggcute','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/102.png',60,40,80,60,45,40,102,'Kanto'),
 	 ('Exeggutor','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/103.png',95,95,85,125,65,55,103,'Kanto'),
@@ -119,7 +119,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Lickitung','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/108.png',90,55,75,60,75,30,108,'Kanto'),
 	 ('Koffing','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/109.png',40,65,95,60,45,35,109,'Kanto'),
 	 ('Weezing','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/110.png',65,90,120,85,70,60,110,'Kanto');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Rhyhorn','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/111.png',80,85,95,30,30,25,111,'Kanto'),
 	 ('Rhydon','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/112.png',105,130,120,45,45,40,112,'Kanto'),
 	 ('Chansey','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/113.png',250,5,5,35,105,50,113,'Kanto'),
@@ -130,7 +130,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Goldeen','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/118.png',45,67,60,35,50,63,118,'Kanto'),
 	 ('Seaking','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/119.png',80,92,65,65,80,68,119,'Kanto'),
 	 ('Staryu','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/120.png',30,45,55,70,55,85,120,'Kanto');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Starmie','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/121.png',60,75,85,100,85,115,121,'Kanto'),
 	 ('Mr. Mime','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/122.png',40,45,65,100,120,90,122,'Kanto'),
 	 ('Scyther','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/123.png',70,110,80,55,80,105,123,'Kanto'),
@@ -141,7 +141,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Tauros','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/128.png',75,100,95,40,70,110,128,'Kanto'),
 	 ('Magikarp','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/129.png',20,10,55,15,20,80,129,'Kanto'),
 	 ('Gyarados','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/130.png',95,125,79,60,100,81,130,'Kanto');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Lapras','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/131.png',130,85,80,85,95,60,131,'Kanto'),
 	 ('Ditto','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png',48,48,48,48,48,48,132,'Kanto'),
 	 ('Eevee','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/133.png',55,55,50,45,65,55,133,'Kanto'),
@@ -152,7 +152,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Omanyte','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/138.png',35,40,100,90,55,35,138,'Kanto'),
 	 ('Omastar','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/139.png',70,60,125,115,70,55,139,'Kanto'),
 	 ('Kabuto','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/140.png',30,80,90,55,45,55,140,'Kanto');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Kabutops','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/141.png',60,115,105,65,70,80,141,'Kanto'),
 	 ('Aerodactyl','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/142.png',80,105,65,60,75,130,142,'Kanto'),
 	 ('Snorlax','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/143.png',160,110,65,65,110,30,143,'Kanto'),
@@ -163,7 +163,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Dragonair','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/148.png',61,84,65,70,70,70,148,'Kanto'),
 	 ('Dragonite','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/149.png',91,134,95,100,100,80,149,'Kanto'),
 	 ('Mewtwo','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png',106,110,90,154,90,130,150,'Kanto');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Mew','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png',100,100,100,100,100,100,151,'Kanto'),
 	 ('Chikorita','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/152.png',45,49,65,49,65,45,152,'Johto'),
 	 ('Bayleef','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/153.png',60,62,80,63,80,60,153,'Johto'),
@@ -174,7 +174,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Totodile','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/158.png',50,65,64,44,48,43,158,'Johto'),
 	 ('Croconaw','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/159.png',65,80,80,59,63,58,159,'Johto'),
 	 ('Feraligatr','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/160.png',85,105,100,79,83,78,160,'Johto');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Sentret','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/161.png',35,46,34,35,45,20,161,'Johto'),
 	 ('Furret','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/162.png',85,76,64,45,55,90,162,'Johto'),
 	 ('Hoothoot','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/163.png',60,30,30,36,56,50,163,'Johto'),
@@ -185,7 +185,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Ariados','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/168.png',70,90,70,60,60,40,168,'Johto'),
 	 ('Crobat','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/169.png',85,90,80,70,80,130,169,'Johto'),
 	 ('Chinchou','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/170.png',75,38,38,56,56,67,170,'Johto');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Lanturn','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/171.png',125,58,58,76,76,67,171,'Johto'),
 	 ('Pichu','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/172.png',20,40,15,35,35,60,172,'Johto'),
 	 ('Cleffa','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/173.png',50,25,28,45,55,15,173,'Johto'),
@@ -196,7 +196,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Xatu','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/178.png',65,75,70,95,70,95,178,'Johto'),
 	 ('Mareep','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/179.png',55,40,40,65,45,35,179,'Johto'),
 	 ('Flaaffy','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/180.png',70,55,55,80,60,45,180,'Johto');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Ampharos','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/181.png',90,75,75,115,90,55,181,'Johto'),
 	 ('Bellossom','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/182.png',75,80,85,90,100,50,182,'Johto'),
 	 ('Marill','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/183.png',70,20,50,20,50,40,183,'Johto'),
@@ -207,7 +207,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Skiploom','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/188.png',55,45,50,45,65,80,188,'Johto'),
 	 ('Jumpluff','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/189.png',75,55,70,55,85,110,189,'Johto'),
 	 ('Aipom','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/190.png',55,70,55,40,55,85,190,'Johto');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Sunkern','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/191.png',30,30,30,30,30,30,191,'Johto'),
 	 ('Sunflora','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/192.png',75,75,55,105,85,30,192,'Johto'),
 	 ('Yanma','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/193.png',65,65,45,75,45,95,193,'Johto'),
@@ -218,7 +218,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Murkrow','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/198.png',60,85,42,85,42,91,198,'Johto'),
 	 ('Slowking','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/199.png',95,75,80,100,110,30,199,'Johto'),
 	 ('Misdreavus','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/200.png',60,60,60,85,85,85,200,'Johto');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Unown','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/201.png',48,72,48,72,48,48,201,'Johto'),
 	 ('Wobbuffet','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/202.png',190,33,58,33,58,33,202,'Johto'),
 	 ('Girafarig','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/203.png',70,80,65,90,65,85,203,'Johto'),
@@ -229,7 +229,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Steelix','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/208.png',75,85,200,55,65,30,208,'Johto'),
 	 ('Snubbull','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/209.png',60,80,50,40,40,30,209,'Johto'),
 	 ('Granbull','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/210.png',90,120,75,60,60,45,210,'Johto');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Qwilfish','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/211.png',65,95,75,55,55,85,211,'Johto'),
 	 ('Scizor','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/212.png',70,130,100,55,80,65,212,'Johto'),
 	 ('Shuckle','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/213.png',20,10,230,10,230,5,213,'Johto'),
@@ -240,7 +240,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Slugma','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/218.png',40,40,40,70,40,20,218,'Johto'),
 	 ('Magcargo','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/219.png',50,50,120,80,80,30,219,'Johto'),
 	 ('Swinub','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/220.png',50,50,40,30,30,50,220,'Johto');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Piloswine','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/221.png',100,100,80,60,60,50,221,'Johto'),
 	 ('Corsola','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/222.png',55,55,85,65,85,35,222,'Johto'),
 	 ('Remoraid','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/223.png',35,65,35,65,35,65,223,'Johto'),
@@ -251,7 +251,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Houndour','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/228.png',45,60,30,80,50,65,228,'Johto'),
 	 ('Houndoom','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/229.png',75,90,50,110,80,95,229,'Johto'),
 	 ('Kingdra','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/230.png',75,95,95,95,95,85,230,'Johto');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Phanpy','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/231.png',90,60,60,40,40,40,231,'Johto'),
 	 ('Donphan','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/232.png',90,120,120,60,60,50,232,'Johto'),
 	 ('Porygon2','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/233.png',85,80,90,105,95,60,233,'Johto'),
@@ -262,7 +262,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Smoochum','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/238.png',45,30,15,85,65,65,238,'Johto'),
 	 ('Elekid','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/239.png',45,63,37,65,55,95,239,'Johto'),
 	 ('Magby','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/240.png',45,75,37,70,55,83,240,'Johto');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Miltank','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/241.png',95,80,105,40,70,100,241,'Johto'),
 	 ('Blissey','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/242.png',255,10,10,75,135,55,242,'Johto'),
 	 ('Raikou','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/243.png',90,85,75,115,100,115,243,'Johto'),
@@ -273,7 +273,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Tyranitar','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/248.png',100,134,110,95,100,61,248,'Johto'),
 	 ('Lugia','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/249.png',106,90,130,90,154,110,249,'Johto'),
 	 ('Ho-Oh','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/250.png',106,130,90,110,154,90,250,'Johto');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Celebi','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/251.png',100,100,100,100,100,100,251,'Johto'),
 	 ('Treecko','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/252.png',40,45,35,65,55,70,252,'Hoenn'),
 	 ('Grovyle','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/253.png',50,65,45,85,65,95,253,'Hoenn'),
@@ -284,7 +284,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Mudkip','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/258.png',50,70,50,50,50,40,258,'Hoenn'),
 	 ('Marshtomp','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/259.png',70,85,70,60,70,50,259,'Hoenn'),
 	 ('Swampert','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/260.png',100,110,90,85,90,60,260,'Hoenn');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Poochyena','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/261.png',35,55,35,30,30,35,261,'Hoenn'),
 	 ('Mightyena','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/262.png',70,90,70,60,60,70,262,'Hoenn'),
 	 ('Zigzagoon','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/263.png',38,30,41,30,41,60,263,'Hoenn'),
@@ -295,7 +295,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Cascoon','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/268.png',50,35,55,25,25,15,268,'Hoenn'),
 	 ('Dustox','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/269.png',60,50,70,50,90,65,269,'Hoenn'),
 	 ('Lotad','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/270.png',40,30,30,40,50,30,270,'Hoenn');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Lombre','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/271.png',60,50,50,60,70,50,271,'Hoenn'),
 	 ('Ludicolo','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/272.png',80,70,70,90,100,70,272,'Hoenn'),
 	 ('Seedot','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/273.png',40,40,50,30,30,30,273,'Hoenn'),
@@ -306,7 +306,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Wingull','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/278.png',40,30,30,55,30,85,278,'Hoenn'),
 	 ('Pelipper','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/279.png',60,50,100,85,70,65,279,'Hoenn'),
 	 ('Ralts','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/280.png',28,25,25,45,35,40,280,'Hoenn');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Kirlia','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/281.png',38,35,35,65,55,50,281,'Hoenn'),
 	 ('Gardevoir','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/282.png',68,65,65,125,115,80,282,'Hoenn'),
 	 ('Surskit','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/283.png',40,30,32,50,52,65,283,'Hoenn'),
@@ -317,7 +317,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Vigoroth','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/288.png',80,80,80,55,55,90,288,'Hoenn'),
 	 ('Slaking','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/289.png',150,160,100,95,65,100,289,'Hoenn'),
 	 ('Nincada','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/290.png',31,45,90,30,30,40,290,'Hoenn');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Ninjask','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/291.png',61,90,45,50,50,160,291,'Hoenn'),
 	 ('Shedinja','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/292.png',1,90,45,30,30,40,292,'Hoenn'),
 	 ('Whismur','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/293.png',64,51,23,51,23,28,293,'Hoenn'),
@@ -328,7 +328,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Azurill','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/298.png',50,20,40,20,40,20,298,'Hoenn'),
 	 ('Nosepass','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/299.png',30,45,135,45,90,30,299,'Hoenn'),
 	 ('Skitty','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/300.png',50,45,45,35,35,50,300,'Hoenn');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Delcatty','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/301.png',70,65,65,55,55,70,301,'Hoenn'),
 	 ('Sableye','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/302.png',50,75,75,65,65,50,302,'Hoenn'),
 	 ('Mawile','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/303.png',50,85,85,55,55,50,303,'Hoenn'),
@@ -339,7 +339,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Medicham','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/308.png',60,60,75,60,75,80,308,'Hoenn'),
 	 ('Electrike','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/309.png',40,45,40,65,40,65,309,'Hoenn'),
 	 ('Manectric','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/310.png',70,75,60,105,60,105,310,'Hoenn');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Plusle','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/311.png',60,50,40,85,75,95,311,'Hoenn'),
 	 ('Minun','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/312.png',60,40,50,75,85,95,312,'Hoenn'),
 	 ('Volbeat','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/313.png',65,73,55,47,75,85,313,'Hoenn'),
@@ -350,7 +350,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Carvanha','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/318.png',45,90,20,65,20,65,318,'Hoenn'),
 	 ('Sharpedo','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/319.png',70,120,40,95,40,95,319,'Hoenn'),
 	 ('Wailmer','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/320.png',130,70,35,70,35,60,320,'Hoenn');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Wailord','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/321.png',170,90,45,90,45,60,321,'Hoenn'),
 	 ('Numel','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/322.png',60,60,40,65,45,35,322,'Hoenn'),
 	 ('Camerupt','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/323.png',70,100,70,105,75,40,323,'Hoenn'),
@@ -361,7 +361,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Trapinch','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/328.png',45,100,45,45,45,10,328,'Hoenn'),
 	 ('Vibrava','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/329.png',50,70,50,50,50,70,329,'Hoenn'),
 	 ('Flygon','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/330.png',80,100,80,80,80,100,330,'Hoenn');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Cacnea','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/331.png',50,85,40,85,40,35,331,'Hoenn'),
 	 ('Cacturne','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/332.png',70,115,60,115,60,55,332,'Hoenn'),
 	 ('Swablu','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/333.png',45,40,60,40,75,50,333,'Hoenn'),
@@ -372,7 +372,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Solrock','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/338.png',70,95,85,55,65,70,338,'Hoenn'),
 	 ('Barboach','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/339.png',50,48,43,46,41,60,339,'Hoenn'),
 	 ('Whiscash','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/340.png',110,78,73,76,71,60,340,'Hoenn');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Corphish','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/341.png',43,80,65,50,35,35,341,'Hoenn'),
 	 ('Crawdaunt','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/342.png',63,120,85,90,55,55,342,'Hoenn'),
 	 ('Baltoy','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/343.png',40,40,55,40,70,55,343,'Hoenn'),
@@ -383,7 +383,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Armaldo','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/348.png',75,125,100,70,80,45,348,'Hoenn'),
 	 ('Feebas','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/349.png',20,15,20,10,55,80,349,'Hoenn'),
 	 ('Milotic','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/350.png',95,60,79,100,125,81,350,'Hoenn');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Castform','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/351.png',70,70,70,70,70,70,351,'Hoenn'),
 	 ('Kecleon','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/352.png',60,90,70,60,120,40,352,'Hoenn'),
 	 ('Shuppet','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/353.png',44,75,35,63,33,45,353,'Hoenn'),
@@ -394,7 +394,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Chimecho','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/358.png',65,50,70,95,80,65,358,'Hoenn'),
 	 ('Absol','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/359.png',65,130,60,75,60,75,359,'Hoenn'),
 	 ('Wynaut','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/360.png',95,23,48,23,48,23,360,'Hoenn');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Snorunt','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/361.png',50,50,50,50,50,50,361,'Hoenn'),
 	 ('Glalie','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/362.png',80,80,80,80,80,80,362,'Hoenn'),
 	 ('Spheal','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/363.png',70,40,50,55,50,25,363,'Hoenn'),
@@ -405,7 +405,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Gorebyss','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/368.png',55,84,105,114,75,52,368,'Hoenn'),
 	 ('Relicanth','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/369.png',100,90,130,45,65,55,369,'Hoenn'),
 	 ('Luvdisc','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/370.png',43,30,55,40,65,97,370,'Hoenn');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Bagon','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/371.png',45,75,60,40,30,50,371,'Hoenn'),
 	 ('Shelgon','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/372.png',65,95,100,60,50,50,372,'Hoenn'),
 	 ('Salamence','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/373.png',95,135,80,110,80,100,373,'Hoenn'),
@@ -416,7 +416,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Regice','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/378.png',80,50,100,100,200,50,378,'Hoenn'),
 	 ('Registeel','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/379.png',80,75,150,75,150,50,379,'Hoenn'),
 	 ('Latias','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/380.png',80,80,90,110,130,110,380,'Hoenn');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Latios','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/381.png',80,90,80,130,110,110,381,'Hoenn'),
 	 ('Kyogre','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/382.png',100,100,90,150,140,90,382,'Hoenn'),
 	 ('Groudon','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/383.png',100,150,140,100,90,90,383,'Hoenn'),
@@ -427,7 +427,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Torterra','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/389.png',95,109,105,75,85,56,389,'Sinnoh'),
 	 ('Chimchar','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/390.png',44,58,44,58,44,61,390,'Sinnoh'),
 	 ('Monferno','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/391.png',64,78,52,78,52,81,391,'Sinnoh');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Infernape','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/392png',76,104,71,104,71,108,392,'Sinnoh'),
 	 ('Piplup','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/393.png',53,51,53,61,56,40,393,'Sinnoh'),
 	 ('Deoxys','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/386.png',50,150,50,150,50,150,386,'Hoenn'),
@@ -438,7 +438,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Staraptor','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/398.png',85,120,70,50,50,100,398,'Sinnoh'),
 	 ('Bidoof','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/399.png',59,45,40,35,40,31,399,'Sinnoh'),
 	 ('Bibarel','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/400.png',79,85,60,55,60,71,400,'Sinnoh');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Kricketot','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/401.png',37,25,41,25,41,25,401,'Sinnoh'),
 	 ('Kricketune','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/402.png',77,85,51,55,51,65,402,'Sinnoh'),
 	 ('Shinx','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/403.png',45,65,34,40,34,45,403,'Sinnoh'),
@@ -449,7 +449,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Cranidos','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/408.png',67,125,40,30,30,58,408,'Sinnoh'),
 	 ('Rampardos','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/409.png',97,165,60,65,50,58,409,'Sinnoh'),
 	 ('Shieldon','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/410.png',30,42,118,42,88,30,410,'Sinnoh');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Bastiodon','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/411.png',60,52,168,47,138,30,411,'Sinnoh'),
 	 ('Burmy','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/412.png',40,29,45,29,45,36,412,'Sinnoh'),
 	 ('Mothim','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/414.png',70,94,50,94,50,66,414,'Sinnoh'),
@@ -460,7 +460,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Floatzel','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/419.png',85,105,55,85,50,115,419,'Sinnoh'),
 	 ('Cherubi','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/420.png',45,35,45,62,53,35,420,'Sinnoh'),
 	 ('Cherrim','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/421.png',70,60,70,87,78,85,421,'Sinnoh');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Shellos','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/422.png',76,48,48,57,62,34,422,'Sinnoh'),
 	 ('Gastrodon','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/423.png',111,83,68,92,82,39,423,'Sinnoh'),
 	 ('Ambipom','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/424.png',75,100,66,60,66,115,424,'Sinnoh'),
@@ -471,7 +471,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Mismagius','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/429.png',60,60,60,105,105,105,429,'Sinnoh'),
 	 ('Honchkrow','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/430.png',100,125,52,105,52,71,430,'Sinnoh'),
 	 ('Glameow','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/431.png',49,55,42,42,37,85,431,'Sinnoh');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Purugly','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/432.png',71,82,64,64,59,112,432,'Sinnoh'),
 	 ('Chingling','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/433.png',45,30,50,65,50,45,433,'Sinnoh'),
 	 ('Stunky','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/434.png',63,63,47,41,41,74,434,'Sinnoh'),
@@ -482,7 +482,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Mime Jr.','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/439.png',20,25,45,70,90,60,439,'Sinnoh'),
 	 ('Happiny','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/440.png',100,5,5,15,65,30,440,'Sinnoh'),
 	 ('Chatot','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/441.png',76,65,45,92,42,91,441,'Sinnoh');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Spiritomb','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/442.png',50,92,108,92,108,35,442,'Sinnoh'),
 	 ('Gible','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/443.png',58,70,45,40,45,42,443,'Sinnoh'),
 	 ('Gabite','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/444.png',68,90,65,50,55,82,444,'Sinnoh'),
@@ -493,7 +493,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Hippowdon','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/450.png',108,112,118,68,72,47,450,'Sinnoh'),
 	 ('Skorupi','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/451.png',40,50,90,30,55,65,451,'Sinnoh'),
 	 ('Drapion','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/452.png',70,90,110,60,75,95,452,'Sinnoh');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Croagunk','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/453.png',48,61,40,61,40,50,453,'Sinnoh'),
 	 ('Toxicroak','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/454.png',83,106,65,86,65,85,454,'Sinnoh'),
 	 ('Carnivine','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/455.png',74,100,72,90,72,46,455,'Sinnoh'),
@@ -504,7 +504,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Abomasnow','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/460.png',90,92,75,92,85,60,460,'Sinnoh'),
 	 ('Weavile','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/461.png',70,120,65,45,85,125,461,'Sinnoh'),
 	 ('Magnezone','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/462.png',70,70,115,130,90,60,462,'Sinnoh');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Lickilicky','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/463.png',110,85,95,80,95,50,463,'Sinnoh'),
 	 ('Rhyperior','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/464.png',115,140,130,55,55,40,464,'Sinnoh'),
 	 ('Tangrowth','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/465.png',100,100,125,110,50,50,465,'Sinnoh'),
@@ -515,7 +515,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Leafeon','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/470.png',65,110,130,60,65,95,470,'Sinnoh'),
 	 ('Glaceon','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/471.png',65,60,110,130,95,65,471,'Sinnoh'),
 	 ('Gliscor','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/472.png',75,95,125,45,75,95,472,'Sinnoh');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Mamoswine','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/473.png',110,130,80,70,60,80,473,'Sinnoh'),
 	 ('Porygon-Z','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/474.png',85,80,70,135,75,90,474,'Sinnoh'),
 	 ('Gallade','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/475.png',68,125,65,65,115,80,475,'Sinnoh'),
@@ -526,7 +526,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Uxie','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/480.png',75,75,130,75,130,95,480,'Sinnoh'),
 	 ('Mesprit','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/481.png',80,105,105,105,105,80,481,'Sinnoh'),
 	 ('Azelf','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/482.png',75,125,70,125,70,115,482,'Sinnoh');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Dialga','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/483.png',100,120,120,150,100,90,483,'Sinnoh'),
 	 ('Palkia','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/484.png',90,120,100,150,120,100,484,'Sinnoh'),
 	 ('Heatran','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/485.png',91,90,106,130,106,77,485,'Sinnoh'),
@@ -537,7 +537,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Darkrai','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/491.png',70,90,90,135,90,125,491,'Sinnoh'),
 	 ('Arceus','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/493.png',120,120,120,120,120,120,493,'Sinnoh'),
 	 ('Victini','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/494.png',100,100,100,100,100,100,494,'Sinnoh');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Snivy','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/495.png',45,45,55,45,55,63,495,'Unys'),
 	 ('Servine','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/496.png',60,60,75,60,75,83,496,'Unys'),
 	 ('Serperior','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/497.png',75,75,95,75,95,113,497,'Unys'),
@@ -548,7 +548,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Dewott','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/502.png',75,75,60,83,60,60,502,'Unys'),
 	 ('Samurott','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/503.png',95,100,85,108,70,70,503,'Unys'),
 	 ('Patrat','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/504.png',45,55,39,35,39,42,504,'Unys');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Watchog','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/505.png',60,85,69,60,69,77,505,'Unys'),
 	 ('Lillipup','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/506.png',45,60,45,25,45,55,506,'Unys'),
 	 ('Herdier','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/507.png',65,80,65,35,65,60,507,'Unys'),
@@ -559,7 +559,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Simisage','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/512.png',75,98,63,98,63,101,512,'Unys'),
 	 ('Pansear','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/513.png',50,53,48,53,48,64,513,'Unys'),
 	 ('Simisear','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/514.png',75,98,63,98,63,101,514,'Unys');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Panpour','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/515.png',50,53,48,53,48,64,515,'Unys'),
 	 ('Simipour','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/516.png',75,98,63,98,63,101,516,'Unys'),
 	 ('Giratina','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/487.png',150,120,100,120,100,90,487,'Sinnoh'),
@@ -570,7 +570,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Blitzle','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/522.png',45,60,32,50,32,76,522,'Unys'),
 	 ('Zebstrika','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/523.png',75,100,63,80,63,116,523,'Unys'),
 	 ('Roggenrola','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/524.png',55,75,85,25,25,15,524,'Unys');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Boldore','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/525.png',70,105,105,50,40,20,525,'Unys'),
 	 ('Gigalith','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/526.png',85,135,130,60,70,25,526,'Unys'),
 	 ('Woobat','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/527.png',55,45,43,55,43,72,527,'Unys'),
@@ -581,7 +581,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Timburr','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/532.png',75,80,55,25,35,35,532,'Unys'),
 	 ('Gurdurr','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/533.png',85,105,85,40,50,40,533,'Unys'),
 	 ('Conkeldurr','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/534.png',105,140,95,55,65,45,534,'Unys');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Tympole','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/535.png',50,50,40,50,40,64,535,'Unys'),
 	 ('Palpitoad','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/536.png',75,65,55,65,55,69,536,'Unys'),
 	 ('Seismitoad','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/537.png',105,85,75,85,75,74,537,'Unys'),
@@ -592,7 +592,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Leavanny','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/542.png',75,103,80,70,70,92,542,'Unys'),
 	 ('Venipede','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/543.png',30,45,59,30,39,57,543,'Unys'),
 	 ('Whirlipede','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/544.png',40,55,99,40,79,47,544,'Unys');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Scolipede','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/545.png',60,90,89,55,69,112,545,'Unys'),
 	 ('Cottonee','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/546.png',40,27,60,37,50,66,546,'Unys'),
 	 ('Whimsicott','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/547.png',60,67,85,77,75,116,547,'Unys'),
@@ -603,7 +603,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Krokorok','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/552.png',60,82,45,45,45,74,552,'Unys'),
 	 ('Krookodile','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/553.png',95,117,70,65,70,92,553,'Unys'),
 	 ('Darumaka','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/554.png',70,90,45,15,45,50,554,'Unys');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Maractus','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/556.png',75,86,67,106,67,60,556,'Unys'),
 	 ('Dwebble','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/557.png',50,65,85,35,35,55,557,'Unys'),
 	 ('Crustle','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/558.png',70,95,125,65,75,45,558,'Unys'),
@@ -614,7 +614,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Carracosta','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/565.png',74,108,133,83,65,32,565,'Unys'),
 	 ('Archen','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/566.png',55,112,45,74,45,70,566,'Unys'),
 	 ('Archeops','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/567.png',75,140,65,112,65,110,567,'Unys');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Trubbish','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/568.png',50,50,62,40,62,65,568,'Unys'),
 	 ('Garbodor','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/569.png',80,95,82,60,82,75,569,'Unys'),
 	 ('Sigilyph','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/561.png',72,58,80,103,80,97,561,'Unys'),
@@ -625,7 +625,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Gothita','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/574.png',45,30,50,55,65,45,574,'Unys'),
 	 ('Gothorita','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/575.png',60,45,70,75,85,55,575,'Unys'),
 	 ('Gothitelle','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/576.png',70,55,95,95,110,65,576,'Unys');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Solosis','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/577.png',45,30,40,105,50,20,577,'Unys'),
 	 ('Duosion','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/578.png',65,40,50,125,60,30,578,'Unys'),
 	 ('Reuniclus','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/579.png',110,65,75,125,85,30,579,'Unys'),
@@ -636,7 +636,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Vanilluxe','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/584.png',71,95,85,110,95,79,584,'Unys'),
 	 ('Deerling','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/585.png',60,60,50,40,50,75,585,'Unys'),
 	 ('Sawsbuck','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/586.png',80,100,70,60,70,95,586,'Unys');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Emolga','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/587.png',55,75,60,75,60,103,587,'Unys'),
 	 ('Karrablast','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/588.png',50,75,45,40,45,60,588,'Unys'),
 	 ('Escavalier','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/589.png',70,135,105,60,105,20,589,'Unys'),
@@ -647,7 +647,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Alomomola','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/594.png',165,75,80,40,45,65,594,'Unys'),
 	 ('Joltik','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/595.png',50,47,50,57,50,65,595,'Unys'),
 	 ('Galvantula','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/596.png',70,77,60,97,60,108,596,'Unys');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Ferroseed','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/597.png',44,50,91,24,86,10,597,'Unys'),
 	 ('Ferrothorn','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/598.png',74,94,131,54,116,20,598,'Unys'),
 	 ('Klink','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/599.png',40,55,70,45,60,30,599,'Unys'),
@@ -658,7 +658,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Bronzor','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/436.png',57,24,86,24,86,23,436,'Sinnoh'),
 	 ('Elgyem','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/605.png',55,55,55,85,55,30,605,'Unys'),
 	 ('Beheeyem','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/606.png',75,75,75,125,95,40,606,'Unys');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Litwick','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/607.png',50,30,55,65,55,20,607,'Unys'),
 	 ('Lampent','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/608.png',60,40,60,95,60,55,608,'Unys'),
 	 ('Chandelure','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/609.png',60,55,90,145,90,80,609,'Unys'),
@@ -669,7 +669,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Beartic','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/614.png',95,110,80,70,80,50,614,'Unys'),
 	 ('Cryogonal','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/615.png',70,50,30,95,135,105,615,'Unys'),
 	 ('Shelmet','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/616.png',50,40,85,40,65,25,616,'Unys');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Accelgor','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/617.png',80,70,40,100,60,145,617,'Unys'),
 	 ('Stunfisk','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/618.png',109,66,84,81,99,32,618,'Unys'),
 	 ('Mienfoo','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/619.png',45,85,50,55,50,65,619,'Unys'),
@@ -680,7 +680,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Pawniard','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/624.png',45,85,70,40,40,60,624,'Unys'),
 	 ('Bisharp','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/625.png',65,125,100,60,70,70,625,'Unys'),
 	 ('Bouffalant','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/626.png',95,110,95,40,95,55,626,'Unys');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Rufflet','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/627.png',70,83,50,37,50,60,627,'Unys'),
 	 ('Braviary','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/628.png',100,123,75,57,75,80,628,'Unys'),
 	 ('Vullaby','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/629.png',70,55,75,45,65,60,629,'Unys'),
@@ -691,7 +691,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Zweilous','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/634.png',72,85,70,65,70,58,634,'Unys'),
 	 ('Hydreigon','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/635.png',92,105,90,125,90,98,635,'Unys'),
 	 ('Larvesta','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/636.png',55,85,55,50,55,60,636,'Unys');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Volcarona','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/637.png',85,60,65,135,105,100,637,'Unys'),
 	 ('Terrakion','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/639.png',91,129,90,72,90,108,639,'Unys'),
 	 ('Meloetta','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/648.png',100,77,77,128,128,90,648,'Unys'),
@@ -702,7 +702,7 @@ INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defens
 	 ('Genesect','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/649.png',71,120,95,120,95,99,649,'Unys'),
 	 ('Thundurus','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/642.png',79,115,70,125,80,111,642,'Unys'),
 	 ('Hippopotas','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/449.png',68,72,78,38,42,32,449,'Sinnoh');
-INSERT INTO public.pokemon ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
+INSERT INTO public.pokemons ("name",picture,hp,attack,defense,"attackSpe","defenseSpe",speed,"#",region) VALUES
 	 ('Munna','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/517.png',76,25,45,67,55,24,517,'Unys'),
 	 ('Tranquill','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/520.png',62,77,62,50,42,65,520,'Unys'),
 	 ('Scrafty','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/560.png',65,90,115,45,115,58,560,'Unys'),

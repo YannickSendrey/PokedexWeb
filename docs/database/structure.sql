@@ -1,4 +1,4 @@
-CREATE TABLE "pokemon" (
+CREATE TABLE "pokemons" (
   "id" serial PRIMARY KEY,
   "name" varchar(255) NOT NULL,
   "picture" varchar(255),
@@ -12,13 +12,13 @@ CREATE TABLE "pokemon" (
   "region" varchar(255)
 );
 
-CREATE TABLE "type" (
+CREATE TABLE "types" (
   "id" serial PRIMARY KEY,
   "name" varchar(255) NOT NULL,
   "color" varchar(255) NOT NULL
 );
 
-CREATE TABLE "user" (
+CREATE TABLE "users" (
   "id" serial PRIMARY KEY,
   "username" varchar(255) NOT NULL,
   "password" varchar(255) NOT NULL
