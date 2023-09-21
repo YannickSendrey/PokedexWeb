@@ -26,7 +26,7 @@ Route::get('/pokemons/region/{region}', [PokemonController::class, 'list']);
 Route::get('/pokemons/{id}', [PokemonController::class, 'find'])->where('id', '[0-9]+');
 
 Route::post('/pokemons/add', [PokemonController::class, 'addToFavorite']);
-Route::delete('/pokemons/remove/{userId}/{pokemonId}', [PokemonController::class, 'deleteFromFavorite']);
+Route::delete('/pokemons/remove/{userId}/{pokemonId}', [PokemonController::class, 'deleteFromFavorite'])->where('userId', '[0-9]+')->where('pokemonId', '[0-9]+');
 
 Route::post('/users/add', [UserController::class, 'create']);
 Route::post('/users/sign-in', [UserController::class, 'checkIfUserExists']);
