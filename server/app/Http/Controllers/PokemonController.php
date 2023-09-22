@@ -10,7 +10,7 @@ class PokemonController extends Controller {
 
     public function list($region = '') {
         if ($region === '') {
-            $pokemons = Pokemon::all()->sortBy('number');
+            $pokemons = Pokemon::all()->sortBy('number')->values();
 
             if ($pokemons->isEmpty()) {
                 return response()->json("No Pokemon found at all, there seems to be an issue...", 404);

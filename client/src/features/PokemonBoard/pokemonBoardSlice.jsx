@@ -69,5 +69,6 @@ export const pokemonBoardSlice = createSlice({
 })
 
 export const selectAllPokemons = state => state.pokemonBoard.pokemons;
+export const selectIsLoading = state => state.pokemonBoard.isLoadingPokemons;
 
 export default pokemonBoardSlice.reducer;
