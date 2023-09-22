@@ -1,5 +1,6 @@
 import React from 'react';
 import { ReactSearchAutocomplete } from 'react-search-autocomplete';
+import styles from '../../css/pokemonBoard.module.css';
 
 export const SearchInput = ({ pokemons }) => {
 
@@ -8,23 +9,30 @@ export const SearchInput = ({ pokemons }) => {
     const items = [...pokemons];
     const formatResult = (item) => {
         return (
-            <span style={{ display: 'block', textAlign: 'left' }}>{item.name}</span>
+            <span className={styles.main_input_span}>{item.name}</span>
         )
     }
     
     return (
-        <ReactSearchAutocomplete
+            <ReactSearchAutocomplete
             placeholder='Search a specific Pokemon...'
             items={items}
             formatResult={formatResult}
             maxResults='1'
             maxLength='10'
             showIcon={false}
+            
             styling={
                 {
-                    backgroundColor: 'grey'
+                    backgroundColor: 'rgba(75, 99, 133, 0.56)',
+                    border: '1px solid #1F2937',
+                    lineColor: 'rgb(31, 41, 55)',
+                    hoverBackgroundColor: '',
+                    boxShadow: 'none',
+                    color: 'rgba(253, 253, 253, 0.632)',
+                    placeholderColor: 'rgba(253, 253, 253, 0.632)'
                 }
             }
-        />
+            />
     )
 }
