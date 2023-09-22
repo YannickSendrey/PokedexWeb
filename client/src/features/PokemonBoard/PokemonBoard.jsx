@@ -7,7 +7,7 @@ import { SearchInput } from '../SearchInput/SearchInput';
 
 export const PokemonBoard = () => {
     const dispatch = useDispatch();
-    let pokemons = useSelector(selectAllPokemons);
+    const pokemons = useSelector(selectAllPokemons);
     const isLoading = useSelector(selectIsLoading);
     const [selectedRegion, setSelectedRegion] = useState('');
 
@@ -25,7 +25,7 @@ export const PokemonBoard = () => {
 
     return (
         <main>
-            <SearchInput />
+            <SearchInput pokemons={pokemons} />
             <select name="region" id="region" onChange={handleSelectChange}>
                 <option value="">Filter by region</option>
                 <option value="kanto">Kanto</option>
@@ -43,7 +43,6 @@ export const PokemonBoard = () => {
                     key={pokemon.id}
                 />
             )))}
-            <SearchInput />
         </main>
     )
 }

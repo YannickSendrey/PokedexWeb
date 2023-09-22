@@ -1,8 +1,30 @@
 import React from 'react';
+import { ReactSearchAutocomplete } from 'react-search-autocomplete';
 
-export const SearchInput = () => {
+export const SearchInput = ({ pokemons }) => {
+
+    /* Using ReactSearchAutocomplete library https://github.com/sickdyd/react-search-autocomplete#reactsearchautocomplete */
+
+    const items = [...pokemons];
+    const formatResult = (item) => {
+        return (
+            <span style={{ display: 'block', textAlign: 'left' }}>{item.name}</span>
+        )
+    }
     
     return (
-        <input type="text" placeholder="Search for a specific pokemon..." />
+        <ReactSearchAutocomplete
+            placeholder='Search a specific Pokemon...'
+            items={items}
+            formatResult={formatResult}
+            maxResults='1'
+            maxLength='10'
+            showIcon={false}
+            styling={
+                {
+                    backgroundColor: 'grey'
+                }
+            }
+        />
     )
 }
