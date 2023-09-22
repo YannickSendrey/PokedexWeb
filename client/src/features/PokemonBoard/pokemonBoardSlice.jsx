@@ -37,12 +37,12 @@ export const pokemonBoardSlice = createSlice({
         builder
             .addCase(loadAllPokemons.pending, (state) => {
                 state.isLoadingPokemons = true;
-                state.pokemons = [];
                 state.hasError = false;
+                state.pokemons = [];
             })
             .addCase(loadAllPokemons.fulfilled, (state, action) => {
                 state.isLoadingPokemons = false;
-                state.pokemons = action.payload;
+                state.pokemons = [...state.pokemons, ...action.payload];
                 state.hasError = false;
             })
             .addCase(loadAllPokemons.rejected, (state) => {
@@ -52,7 +52,6 @@ export const pokemonBoardSlice = createSlice({
             })
             .addCase(loadOnePokemon.pending, (state) => {
                 state.isLoadingPokemons = true;
-                state.pokemons = [];
                 state.hasError = false;
             })
             .addCase(loadOnePokemon.fulfilled, (state, action) => {
@@ -70,5 +69,6 @@ export const pokemonBoardSlice = createSlice({
 
 export const selectAllPokemons = state => state.pokemonBoard.pokemons;
 export const selectIsLoading = state => state.pokemonBoard.isLoadingPokemons;
+
 
 export default pokemonBoardSlice.reducer;
