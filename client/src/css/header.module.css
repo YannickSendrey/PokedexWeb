@@ -81,3 +81,7 @@
 .header_log {
     color: rgb(31, 41, 55);
 }
+
+.header_h1:hover, .header_button:hover, .header_img:hover {
+    cursor: pointer;
+}
