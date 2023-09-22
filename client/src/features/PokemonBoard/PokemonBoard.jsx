@@ -3,6 +3,7 @@ import { loadAllPokemons } from './pokemonBoardSlice';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectAllPokemons, selectIsLoading } from './pokemonBoardSlice';
 import { PokemonTile } from '../../components/PokemonTile';
+import { SearchInput } from '../SearchInput/SearchInput';
 
 export const PokemonBoard = () => {
     const dispatch = useDispatch();
@@ -24,6 +25,7 @@ export const PokemonBoard = () => {
 
     return (
         <main>
+            <SearchInput />
             <select name="region" id="region" onChange={handleSelectChange}>
                 <option value="">Filter by region</option>
                 <option value="kanto">Kanto</option>
@@ -41,6 +43,7 @@ export const PokemonBoard = () => {
                     key={pokemon.id}
                 />
             )))}
+            <SearchInput />
         </main>
     )
 }
