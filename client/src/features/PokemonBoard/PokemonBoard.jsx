@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { loadAllPokemons } from './pokemonBoardSlice';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectAllPokemons, selectIsLoading } from './pokemonBoardSlice';
@@ -11,22 +11,43 @@ export const PokemonBoard = () => {
     const pokemons = useSelector(selectAllPokemons);
     const isLoading = useSelector(selectIsLoading);
     const [selectedRegion, setSelectedRegion] = useState('');
+    const [isScrolling, setIsScrolling] = useState(false);
+    const scrollTimeout = useRef(null);
 
     useEffect(() => {
         dispatch(loadAllPokemons(selectedRegion));
         }, [selectedRegion]);
-    
+
+    // hide SearchInput onScroll
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolling(true);
+            clearTimeout(scrollTimeout.current); 
+
+            const timeout = setTimeout(() => {
+                setIsScrolling(false);
+            }, 500);
+
+            scrollTimeout.current = timeout; 
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     const handleSelectChange = (event) => {
         const value = event.target.value; 
         setSelectedRegion(value);
     }
 
-
-
     return (
         <main className={styles.main}>
-            <SearchInput pokemons={pokemons} />
+            <div className={`${styles.main_input} ${isScrolling ? styles.hidden : ''}`}>
+                <SearchInput pokemons={pokemons} />
+            </div>
             <select name="region" id="region" onChange={handleSelectChange} className={styles.main_select}>
                 <option value="">Filter by region</option>
                 <option value="kanto">Kanto</option>

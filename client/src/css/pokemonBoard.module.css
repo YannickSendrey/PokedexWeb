@@ -20,8 +20,8 @@
 @media all and (min-width: 850px) {
     .main_select {
         height: 3em;
-        width: 18%;
-        font-size: 1.2em;
+        width: 20%;
+        font-size: 1em;
     }
 
     .tile {
@@ -75,11 +75,16 @@
     cursor: pointer;
 }
 
+
 .main_input {
     position: fixed;
     bottom: 70px;
     width: 50%;
     left: calc(25%);
+}
+
+.hidden {
+    display: none;
 }
 
 .main_input_span {

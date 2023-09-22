@@ -14,7 +14,6 @@ export const SearchInput = ({ pokemons }) => {
     }
     
     return (
-        <div className={styles.main_input}>
             <ReactSearchAutocomplete
             placeholder='Search a specific Pokemon...'
             items={items}
@@ -35,6 +34,5 @@ export const SearchInput = ({ pokemons }) => {
                 }
             }
             />
-        </div>
     )
 }
