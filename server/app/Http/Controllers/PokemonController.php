@@ -10,7 +10,7 @@ class PokemonController extends Controller {
 
     public function list($region = '') {
         if ($region === '') {
-            $pokemons = Pokemon::all()->sortBy('#');
+            $pokemons = Pokemon::all()->sortBy('number')->values();
 
             if ($pokemons->isEmpty()) {
                 return response()->json("No Pokemon found at all, there seems to be an issue...", 404);
@@ -55,7 +55,6 @@ class PokemonController extends Controller {
             return response()->json('No Pokemon matches this id...', 404);
         }
 
-        // voir si je peux faire ça mais avec le # au lieu de l'id ? (ou pas ?)
         $user->pokemons()->attach($pokemon);
         return response()->json('This pokemon has been added to your favorites !', 201);
     }
@@ -76,7 +75,7 @@ class PokemonController extends Controller {
         }
 
         // check if there is a row with userId matched with pokemonId
-        $rowExist = User::find($userId)->pokemons()->wherePivot('pokemon_id', $pokemonId)->exists();
+        $rowExist = $user->pokemons()->wherePivot('pokemon_id', $pokemonId)->exists();
 
         if (!$rowExist) {
             return response()->json("This pokemon i'snt in your favorites yet...", 404);
