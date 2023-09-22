@@ -22,7 +22,8 @@ export const SearchInput = ({ pokemons }) => {
             showIcon={false}
             styling={
                 {
-                    backgroundColor: 'grey'
+                    backgroundColor: 'rgba(245, 245, 245, 0.802)',
+                    border: '1px solid #1F2937'
                 }
             }
         />
