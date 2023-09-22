@@ -1,0 +1,28 @@
+.main {
+
+}
+
+.main_select {
+
+}
+
+.main_section {
+
+}
+
+.main_input {
+    position: fixed;
+    bottom: 70px;
+    width: 50%;
+    left: calc(25%);
+}
+
+.main_input_span {
+    display: block;
+    text-align: left;
+
+}
+
+.main_input_span:hover {
+    cursor:pointer;
+}

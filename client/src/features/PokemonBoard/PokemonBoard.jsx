@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { selectAllPokemons, selectIsLoading } from './pokemonBoardSlice';
 import { PokemonTile } from '../../components/PokemonTile';
 import { SearchInput } from '../SearchInput/SearchInput';
+import styles from '../../css/pokemonBoard.module.css';
 
 export const PokemonBoard = () => {
     const dispatch = useDispatch();
@@ -24,9 +25,9 @@ export const PokemonBoard = () => {
 
 
     return (
-        <main>
+        <main className={styles.main}>
             <SearchInput pokemons={pokemons} />
-            <select name="region" id="region" onChange={handleSelectChange}>
+            <select name="region" id="region" onChange={handleSelectChange} className={styles.main_select}>
                 <option value="">Filter by region</option>
                 <option value="kanto">Kanto</option>
                 <option value="johto">Johto</option>
@@ -34,15 +35,17 @@ export const PokemonBoard = () => {
                 <option value="sinnoh">Sinnoh</option>
                 <option value="unys">Unys</option>
             </select>
-            {isLoading ? (
-                <div>Loading...</div>
-            ) : (
-                pokemons.map((pokemon) => (
-                <PokemonTile
-                    pokemonId={pokemon.id}
-                    key={pokemon.id}
-                />
-            )))}
+            <section className={styles.main_section}>
+                {isLoading ? (
+                    'Loading...'
+                ) : (
+                    pokemons.map((pokemon) => (
+                    <PokemonTile
+                        pokemonId={pokemon.id}
+                        key={pokemon.id}
+                    />
+                )))}
+            </section>
         </main>
     )
 }
