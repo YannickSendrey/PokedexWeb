@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './app/App.jsx';
+import { Header } from './components/Header.jsx';
 import { Provider } from 'react-redux';
 import store from './app/store.jsx';
 import {
@@ -11,7 +12,9 @@ import {
   } from "react-router-dom";
 
 const router = createBrowserRouter(createRoutesFromElements(
-    <Route path='/'element={ <App/> }/>
+    <Route path='/' element={ <Header /> }>
+        <Route index element={ <App />}/>
+    </Route>
 ));
 
 ReactDOM.createRoot(document.getElementById('root')).render(
