@@ -25,11 +25,13 @@ export const SearchInput = ({ pokemons }) => {
             
             styling={
                 {
-                    backgroundColor: 'rgba(245, 245, 245, 0.802)',
+                    backgroundColor: 'rgba(75, 99, 133, 0.56)',
                     border: '1px solid #1F2937',
                     lineColor: 'rgb(31, 41, 55)',
                     hoverBackgroundColor: '',
-                    boxShadow: 'none'
+                    boxShadow: 'none',
+                    color: 'rgba(253, 253, 253, 0.632)',
+                    placeholderColor: 'rgba(253, 253, 253, 0.632)'
                 }
             }
             />

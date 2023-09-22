@@ -10,9 +10,9 @@ export const PokemonTile = ({ pokemonId }) => {
     const alt = `Picture of ${name}`;
 
     return (
-        <div>
-            <img src={picture} alt={alt} />
-            <p>{name}</p>
+        <div className={styles.tile}>
+            <img src={picture} alt={alt} className={styles.tile_img}/>
+            <p className={styles.tile_name}>{name}</p>
         </div>
     )
 }
