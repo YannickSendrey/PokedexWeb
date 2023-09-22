@@ -10,7 +10,6 @@
     .header_button {
         width: 20% ;
         height: 2.2em ;
-        border-radius: 0.8em;
     }
 
     .header_log {
@@ -31,7 +30,6 @@
     .header_button {
         width: 20% ;
         height: 2.7em ;
-        border-radius: 0.8em;
     }
 
     .header_log {
@@ -52,7 +50,6 @@
     .header_button {
         width: 20% ;
         height: 3em ;
-        border-radius: 0.8em;
     }
 
     .header_log {
@@ -76,6 +73,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 0.8em;
 }
 
 .header_log {

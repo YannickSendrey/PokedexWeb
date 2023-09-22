@@ -1,9 +1,35 @@
-.main {
+@media all and (max-width: 849px) {
+    .main_select {
+        height: 2.2em;
+        width: 25%;
+        font-size: 1.1em;
+    }
+}
+@media all and (min-width: 850px) {
+    .main_select {
+        height: 3em;
+        width: 15%;
+        font-size: 1.2em;
+    }
+}
+@media all and (min-width: 1500px) {
+    .main_select {
+        height: 3.2em;
+        width: 13%;
+        font-size: 1.4em;
+    }
+}
 
+.main {
+    border-top: 3px solid rgba(75, 99, 133, 0.56);
 }
 
 .main_select {
-
+    margin: 5%;
+    border-radius: 0.8em;
+    padding-left: 2%;
+    background-color: rgba(75, 99, 133, 0.086);
+    color: rgba(253, 253, 253, 0.632);
 }
 
 .main_section {
