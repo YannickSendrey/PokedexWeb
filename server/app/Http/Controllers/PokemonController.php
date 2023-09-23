@@ -35,6 +35,10 @@ class PokemonController extends Controller {
             return response()->json('No Pokemon matches this id...', 404);
         }
 
+        // fetch types via pivot table (and relations in Models) and attach it to our json response
+        $types = $pokemon->types;
+        $pokemon->types = $types;
+
         return $pokemon;
     }
 

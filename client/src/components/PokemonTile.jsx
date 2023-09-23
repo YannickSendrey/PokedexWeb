@@ -7,11 +7,10 @@ export const PokemonTile = ({ pokemonId }) => {
     const pokemons = useSelector(selectAllPokemons);
     const pokemon = pokemons.find((pokemon) => pokemon.id === pokemonId);
     const { id, picture, name } = pokemon;
-    const alt = `Picture of ${name}`;
 
     return (
         <div className={styles.tile}>
-            <img src={picture} alt={alt} className={styles.tile_img}/>
+            <img src={picture} alt={`${name}`} className={styles.tile_img}/>
             <p className={styles.tile_name}>{name}</p>
         </div>
     )
