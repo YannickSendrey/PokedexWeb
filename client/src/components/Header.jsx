@@ -9,7 +9,7 @@ export const Header = () => {
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
 	const goHome = () => {
-		let path = '/';
+		let path = '/pokemons';
 		navigate(path);
 		dispatch(loadAllPokemons());
 	};

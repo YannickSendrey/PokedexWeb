@@ -11,7 +11,7 @@ export const PokemonTile = ({ pokemonId }) => {
 
 	const navigate = useNavigate();
 	const goToPokemon = () => {
-		let path = '/' + number;
+		let path = '/pokemons/' + number;
 		navigate(path);
 	};
 
