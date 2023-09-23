@@ -62,7 +62,7 @@ export const PokemonBoard = () => {
 				<option value='unys'>Unys</option>
 			</select>
 			<section className={styles.main_section}>
-				{isLoading || !Array.isArray(pokemons) || !pokemons
+				{isLoading || !pokemons
 					? 'Loading...'
 					: pokemons.map((pokemon) => (
 							<PokemonTile
