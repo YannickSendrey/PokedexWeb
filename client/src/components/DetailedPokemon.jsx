@@ -15,13 +15,35 @@ export const DetailedPokemon = () => {
     dispatch(loadOnePokemon(id));
   }, []);
 
+  // get info from pokemon and its type(s)
   const pokemon = useSelector(selectAllPokemons);
   const types = pokemon.types;
 
+  // extract types and change desc backgroundColor depending on type(s)
+  const getTypeColor = () => {
+    const typeColorArray = [];
+    if (types && types.length > 0) {
+      types.forEach((type) => typeColorArray.push(type.color));
+    }
+
+    let typeColor = '';
+
+    if (typeColorArray.length === 1) {
+      typeColor = typeColorArray[0];
+    } else if (typeColorArray.length === 2) {
+      const [type1Color, type2Color] = typeColorArray;
+      typeColor = `linear-gradient(90deg, ${type1Color} 0%, ${type1Color} 50%, ${type2Color} 50%, ${type2Color} 100%)`;
+    } else {
+      typeColor = 'black';
+    }
+
+    return typeColor;
+  };
+
+  // handle statsBars size and color
   const getStatpercentage = (stat) => {
     return (stat * 100) / 255;
   };
-
   const backgroundColor = (stat) => {
     if (stat < 30) return 'rgba(233, 60, 25, 0.418)';
     if (stat < 60) return 'rgba(231, 132, 19, 0.675)';
@@ -116,9 +138,13 @@ export const DetailedPokemon = () => {
           </div>
         </div>
       </section>
-      <section className={styles.main_desc}>
+      <section
+        className={styles.main_desc}
+        style={{
+          background: `${getTypeColor()}`,
+        }}>
         <p className={styles.main_desc_name}>
-          {pokemon.number} - {pokemon.name}
+          #{pokemon.number} - {pokemon.name}
         </p>
         <p className={styles.main_desc_region}>{pokemon.region}</p>
         <div className={styles.main_desc_types}>

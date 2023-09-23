@@ -1,4 +1,5 @@
 @media all and (max-width: 849px) {
+    
     .header_img {
         width: 50px;
     }
@@ -8,12 +9,20 @@
     }
 
     .header_button {
-        width: 20% ;
+        width: 50% ;
         height: 2.2em ;
     }
 
     .header_log {
         font-size: 1em;
+    }
+
+    .header_container_left {
+        justify-content: left;
+    }
+
+    .header_container_right {
+        justify-content: right;
     }
 }
 
@@ -24,36 +33,50 @@
 
     .header_h1 {
         font-size: 2.2em;
-        margin-right: -3%;
     }
 
     .header_button {
-        width: 20% ;
+        width: 60% ;
         height: 2.7em ;
     }
 
     .header_log {
         font-size: 1.4em;
     }
+
+    .header_container_left {
+        justify-content: left;
+    }
+
+    .header_container_right {
+        justify-content: right;
+    }
 }
 
 @media all and (min-width: 1500px) {
     .header_img {
-        width: 80px;
+        width: 90px;
     }
 
     .header_h1 {
         font-size: 2.7em;
-        margin-right: -10%;
     }
 
     .header_button {
-        width: 20% ;
+        width: 60% ;
         height: 3em ;
     }
 
     .header_log {
         font-size: 1.7em;
+    }
+
+    .header_container_left {
+        justify-content: center;
+    }
+
+    .header_container_right {
+        justify-content: center;
     }
 }
 
@@ -62,6 +85,16 @@
     justify-content: space-between;
     align-items: center;
     margin: 3%;
+}
+
+.header_container_left, .header_container_mid, .header_container_right {
+    width: 33%;
+    display: flex;
+    align-items: center;
+}
+
+.header_container_mid {
+    justify-content: center;
 }
 
 .header_h1 {

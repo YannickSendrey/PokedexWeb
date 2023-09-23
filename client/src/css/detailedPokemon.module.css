@@ -35,7 +35,7 @@
     }
 
     .main_desc {
-        
+        border: none;
     }
 }
 
@@ -69,6 +69,7 @@
 .main_section_divImg {
     margin-top: 5%;
     border: 8px solid rgba(75, 99, 133, 0.262);
+    border-radius: 0.8em;
 }
 
 .main_section_img {
@@ -84,12 +85,14 @@
 .main_section_stats_hp, .main_section_stats_atk, .main_section_stats_def, .main_section_stats_atkspe, .main_section_stats_defspe, .main_section_stats_speed  {
     border: 5px solid rgba(75, 99, 133, 0.262);
     margin-bottom: 2%;
+    border-radius: 0.8em;
 }
 
 .main_section_stats_fill {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
+    border-radius: 0.8em;
 }
 
 .main_section_stats_text {
@@ -101,7 +104,9 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border: 2px solid rgba(253, 253, 253, 0.632);
+    border: 1px solid rgba(253, 253, 253, 0.632);
+    color: rgba(253, 253, 253, 0.932);
+    border-radius: 0.8em;
     /* flex-basis: calc(33.33% - 4px); */
 }
 
@@ -114,7 +119,8 @@
 }
 
 .main_desc_types {
-
+    display: flex;
+    gap: 10%
 }
 
 .main_desc_type {
