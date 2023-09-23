@@ -18,7 +18,7 @@ class PokemonController extends Controller {
 
             return $pokemons;
         } else if ($region !== '') {
-            $pokemons = Pokemon::all()->where('region', ucfirst($region))->values();
+            $pokemons = Pokemon::all()->where('region', ucfirst($region))->sortBy('number')->values();
 
             if ($pokemons->isEmpty()) {
                 return response()->json("This region doesn't exist... atleast in Pokemon Gen I-V", 404);
