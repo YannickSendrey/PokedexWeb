@@ -52,7 +52,7 @@
     flex-direction: column;
 }
 
-.main_div:hover {
+.main_innerDiv:hover {
     cursor: pointer;
 }
 
@@ -64,18 +64,30 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 2%;
+    color: rgba(253, 253, 253, 0.632);
+    background-color: rgb(31, 41, 55);;
 }
 
 .main_innerDiv:hover {
     background-color: rgba(75, 99, 133, 0.162);
 }
 
+.main_innerDiv_button {
+    border: 7px dotted rgba(75, 99, 133, 0.262);
+}
+
+.main_innerDiv_input:hover {
+    cursor: text;
+}
+
 .main_text {
     text-align: center;
+    color: rgba(253, 253, 253, 0.632);
 }
 
 .main_link {
-    font-style: italic;
+    text-decoration: none;
+    color: rgba(253, 253, 253, 0.632);
 }
 
 .main_link:hover {

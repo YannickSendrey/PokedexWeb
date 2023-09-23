@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from '../css/home.module.css';
-import { useNavigate } from 'react-router-dom';
+import styles from '../css/forms.module.css';
+import { useNavigate, NavLink } from 'react-router-dom';
 
 export const LoginForm = () => {
 	const navigate = useNavigate();
@@ -23,7 +23,12 @@ export const LoginForm = () => {
 				</div>
 				<p className={styles.main_text}>
 					Already Registered ? Click
-					<a className={styles.main_link}> Here to sign-in !</a>
+					<NavLink
+						to='#'
+						className={styles.main_link}>
+						{' '}
+						Here to sign-in !
+					</NavLink>
 				</p>
 			</div>
 
