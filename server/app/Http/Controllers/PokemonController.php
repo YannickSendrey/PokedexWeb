@@ -34,10 +34,17 @@ class PokemonController extends Controller {
         if (!$pokemon) {
             return response()->json('No Pokemon matches this id...', 404);
         }
+        // a bit of an headache so Laravel will fetch the right pokemon types (I use $number as a PK in my model)
+        $number = $pokemon->number;
+        $id = $pokemon->id;
+        $pokemon->number = $id;
 
         // fetch types via pivot table (and relations in Models) and attach it to our json response
         $types = $pokemon->types;
         $pokemon->types = $types;
+
+        // give back the right number before sending response
+        $pokemon->number = $number;
 
         return $pokemon;
     }
