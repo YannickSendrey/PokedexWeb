@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './app/App.jsx';
+import { DetailedPokemon } from './components/DetailedPokemon.jsx';
 import { Header } from './components/Header.jsx';
 import { Provider } from 'react-redux';
 import store from './app/store.jsx';
@@ -14,6 +15,7 @@ import {
 const router = createBrowserRouter(createRoutesFromElements(
     <Route path='/' element={ <Header /> }>
         <Route index element={ <App />}/>
+        <Route path='/:id' element={ <DetailedPokemon /> } />
     </Route>
 ));
 
