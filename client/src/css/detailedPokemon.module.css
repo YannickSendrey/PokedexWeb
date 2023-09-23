@@ -184,10 +184,6 @@
     border-radius: 0.8em;
 }
 
-.main_section_img {
-
-}
-
 .main_section_stats {
     display: flex;
     flex-direction: column;
@@ -221,19 +217,7 @@
     /* flex-basis: calc(33.33% - 4px); */
 }
 
-.main_desc_name {
-
-}   
-
-.main_desc_region {
-
-}
-
 .main_desc_types {
     display: flex;
     gap: 10%
-}
-
-.main_desc_type {
-
 }
