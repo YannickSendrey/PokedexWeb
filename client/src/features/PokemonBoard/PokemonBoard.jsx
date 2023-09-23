@@ -3,7 +3,7 @@ import { loadAllPokemons } from './pokemonBoardSlice';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectAllPokemons, selectIsLoading } from './pokemonBoardSlice';
 import { PokemonTile } from '../../components/PokemonTile';
-import { SearchInput } from '../SearchInput/SearchInput';
+import { SearchInput } from '../../components/SearchInput';
 import styles from '../../css/pokemonBoard.module.css';
 
 export const PokemonBoard = () => {

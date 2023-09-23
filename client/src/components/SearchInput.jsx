@@ -1,12 +1,12 @@
 import React from 'react';
 import { ReactSearchAutocomplete } from 'react-search-autocomplete';
-import styles from '../../css/pokemonBoard.module.css';
+import styles from '../css/pokemonBoard.module.css';
 import { useNavigate } from 'react-router-dom';
 
 export const SearchInput = ({ pokemons }) => {
 	const navigate = useNavigate();
 	const goToPokemon = (number) => {
-		let path = '/' + number;
+		let path = '/pokemons/' + number;
 		navigate(path);
 	};
 
