@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client';
 import App from './app/App.jsx';
 import { DetailedPokemon } from './components/DetailedPokemon.jsx';
 import { Header } from './components/Header.jsx';
-import { Home } from './features/Home/Home.jsx';
+import { LoginForm } from './components/LoginForm.jsx';
+import { RegisterForm } from './features/RegisterForm/RegisterForm.jsx';
 import { Provider } from 'react-redux';
 import store from './app/store.jsx';
 import {
@@ -20,7 +21,11 @@ const router = createBrowserRouter(
 			element={<Header />}>
 			<Route
 				index
-				element={<Home />}
+				element={<LoginForm />}
+			/>
+			<Route
+				path='/register'
+				element={<RegisterForm />}
 			/>
 			<Route
 				path='/pokemons'
