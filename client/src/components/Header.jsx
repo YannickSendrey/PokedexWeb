@@ -13,6 +13,10 @@ export const Header = () => {
 		navigate(path);
 		dispatch(loadAllPokemons());
 	};
+	const goSignIn = () => {
+		let path = '/sign-in';
+		navigate(path);
+	};
 
 	return (
 		<>
@@ -35,7 +39,11 @@ export const Header = () => {
 				<div className={styles.header_container_right}>
 					<div className={styles.header_button}>
 						{/* login or logout check if user is connected */}
-						<p className={styles.header_log}>Login</p>
+						<p
+							className={styles.header_log}
+							onClick={goSignIn}>
+							Login
+						</p>
 					</div>
 				</div>
 			</header>

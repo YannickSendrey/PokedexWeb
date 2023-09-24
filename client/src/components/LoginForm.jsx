@@ -24,7 +24,7 @@ export const LoginForm = () => {
 				<p className={styles.main_text}>
 					Already Registered ? Click
 					<NavLink
-						to='#'
+						to='/sign-in'
 						className={styles.main_link}>
 						{' '}
 						Here to sign-in !

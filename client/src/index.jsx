@@ -4,7 +4,8 @@ import App from './app/App.jsx';
 import { DetailedPokemon } from './components/DetailedPokemon.jsx';
 import { Header } from './components/Header.jsx';
 import { LoginForm } from './components/LoginForm.jsx';
-import { RegisterForm } from './features/RegisterForm/RegisterForm.jsx';
+import { RegisterForm } from './components/RegisterForm.jsx';
+import { SignInForm } from './components/SignInForm.jsx';
 import { Provider } from 'react-redux';
 import store from './app/store.jsx';
 import {
@@ -26,6 +27,10 @@ const router = createBrowserRouter(
 			<Route
 				path='/register'
 				element={<RegisterForm />}
+			/>
+			<Route
+				path='/sign-in'
+				element={<SignInForm />}
 			/>
 			<Route
 				path='/pokemons'
