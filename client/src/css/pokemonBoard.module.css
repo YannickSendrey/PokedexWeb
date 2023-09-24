@@ -16,6 +16,10 @@
     .tile_name {
         font-size: 1em;
     }
+
+    .main_select_text {
+        font-size: 1.1em;
+    }
 }
 @media all and (min-width: 850px) {
     .main_select {
@@ -35,6 +39,10 @@
     .tile_name {
         font-size: 1.2em;
     }
+
+    .main_select_text {
+        font-size: 1.4em;
+    }
 }
 @media all and (min-width: 1500px) {
     .main_select {
@@ -53,6 +61,10 @@
 
     .tile_name {
         font-size: 1.4em;
+    }
+
+    .main_select_text {
+        font-size: 1.8em;
     }
 }
 
@@ -119,4 +131,16 @@
 
 .tile_img:hover, .tile_name:hover {
     cursor:  pointer;
+}
+
+.main_selectDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main_select_text {
+    color: rgba(253, 253, 253, 0.632);
+    margin-right: 3%;
+    margin-top: 2%;
 }
