@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller {
 
@@ -17,9 +18,21 @@ class UserController extends Controller {
         $username = $request->input('username');
         $password = $request->input('password');
 
+        $userWithSameUsername = User::where('username', $username)->first();
+        if ($userWithSameUsername) {
+            if (Hash::check($password, $userWithSameUsername->password)) {
+                return response()->json('This User already exists...', 303);
+            } else {
+                return response()->json('A user with this Username already exists...', 303);
+            }
+        }
+
+
+        // if these credentials arent already used
+        $hashedPassword = Hash::make($password);
         $user = new User();
         $user->username = $username;
-        $user->password = $password;
+        $user->password = $hashedPassword;
 
         if ($user->save()) {
             return response()->json('Thank you for registering ! your account has been created', 201);
@@ -41,7 +54,7 @@ class UserController extends Controller {
         $user = User::where('username', $username)->where('password', $password)->first();
 
         if (!$user) {
-            return response()->json('No user matches these credentials');
+            return response()->json('No user matches these credentials', 404);
         }
 
         return response()->json($user, 200);
