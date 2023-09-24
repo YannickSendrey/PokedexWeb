@@ -13,6 +13,36 @@ export const Header = () => {
 		navigate(path);
 		dispatch(loadAllPokemons());
 	};
+	const goSignIn = () => {
+		let path = '/sign-in';
+		navigate(path);
+	};
+
+	const goLogOut = async () => {
+		let path = '/';
+		try {
+			const response = await fetch('http://127.0.0.1:8000/api/users/logout', {
+				method: 'POST',
+				headers: {
+					Authorization: `Bearer ${localStorage.getItem('accessToken')}`,
+					'Content-Type': 'application/json',
+				},
+			});
+
+			if (response.ok) {
+				localStorage.removeItem('accessToken');
+				localStorage.removeItem('username');
+
+				navigate(path);
+			}
+		} catch (error) {
+			console.error(error);
+		}
+	};
+
+	const isUserLoggedIn = JSON.parse(localStorage.getItem('accessToken'))
+		? true
+		: false;
 
 	return (
 		<>
@@ -34,8 +64,11 @@ export const Header = () => {
 				</div>
 				<div className={styles.header_container_right}>
 					<div className={styles.header_button}>
-						{/* login or logout check if user is connected */}
-						<p className={styles.header_log}>Login</p>
+						<p
+							className={styles.header_log}
+							onClick={isUserLoggedIn ? goLogOut : goSignIn}>
+							{isUserLoggedIn ? 'Logout' : 'Login'}
+						</p>
 					</div>
 				</div>
 			</header>

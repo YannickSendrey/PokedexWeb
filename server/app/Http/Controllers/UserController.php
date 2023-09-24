@@ -5,10 +5,11 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller {
 
-    public function create(Request $request) {
+    public function register(Request $request) {
 
         $request->validate([
             'username' => 'required',
@@ -41,29 +42,24 @@ class UserController extends Controller {
         }
     }
 
-    public function checkIfUserExists(Request $request) {
-
-        $request->validate([
-            'username' => 'required',
-            'password' => 'required',
-        ]);
+    public function signIn(Request $request) {
 
         $username = $request->input('username');
         $password = $request->input('password');
 
-        $user = User::where('username', $username)->where('password', $password)->first();
+        $user = User::where('username', $username)->first();
 
-        if (!$user) {
+        if ($user && Hash::check($password, $user->password)) {
+            $token = $user->createToken('PokedexWeb')->accessToken;
+            return response()->json(['token' => $token, 'user' => $user], 200);
+        } else {
             return response()->json('No user matches these credentials', 404);
         }
-
-        return response()->json($user, 200);
     }
 
     public function logout(Request $request) {
-        User::logout();
+        Auth::logout();
         // end user session
-        $request->session()->invalidate();
 
         return response()->json('User has been disconnected', 200);
     }

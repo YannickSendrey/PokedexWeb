@@ -45,22 +45,27 @@ export const PokemonBoard = () => {
 
 	return (
 		<main className={styles.main}>
-			<div
-				className={`${styles.main_input} ${isScrolling ? styles.hidden : ''}`}>
-				<SearchInput pokemons={pokemons} />
+			<div className={styles.main_selectDiv}>
+				<select
+					name='region'
+					id='region'
+					onChange={handleSelectChange}
+					className={styles.main_select}>
+					<option value=''>Filter by region</option>
+					<option value='kanto'>Kanto</option>
+					<option value='johto'>Johto</option>
+					<option value='hoenn'>Hoenn</option>
+					<option value='sinnoh'>Sinnoh</option>
+					<option value='unys'>Unys</option>
+				</select>
+				<p className={styles.main_select_text}>
+					Hello{' '}
+					{localStorage.getItem('username')
+						? localStorage.getItem('username')
+						: 'guest'}{' '}
+					!
+				</p>
 			</div>
-			<select
-				name='region'
-				id='region'
-				onChange={handleSelectChange}
-				className={styles.main_select}>
-				<option value=''>Filter by region</option>
-				<option value='kanto'>Kanto</option>
-				<option value='johto'>Johto</option>
-				<option value='hoenn'>Hoenn</option>
-				<option value='sinnoh'>Sinnoh</option>
-				<option value='unys'>Unys</option>
-			</select>
 			<section className={styles.main_section}>
 				{isLoading || !pokemons
 					? 'Loading...'
@@ -71,6 +76,10 @@ export const PokemonBoard = () => {
 							/>
 					  ))}
 			</section>
+			<div
+				className={`${styles.main_input} ${isScrolling ? styles.hidden : ''}`}>
+				<SearchInput pokemons={pokemons} />
+			</div>
 		</main>
 	);
 };

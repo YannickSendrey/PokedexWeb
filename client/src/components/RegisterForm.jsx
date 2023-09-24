@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import styles from '../../css/forms.module.css';
-import { json, NavLink } from 'react-router-dom';
+import styles from '../css/forms.module.css';
 import { useNavigate } from 'react-router-dom';
 
 export const RegisterForm = () => {
 	const navigate = useNavigate();
-	const goHome = () => {
-		let path = '/pokemons';
+	const goSignIn = () => {
+		let path = '/sign-in';
 		navigate(path);
 	};
 	const [username, setUsername] = useState('');
@@ -67,13 +66,12 @@ export const RegisterForm = () => {
 			};
 
 			try {
-				/* CHECK IF USER ALREADY EXIST (A MODIF DANS LE CONTROLLER + UN BAIL DISPLAY NONE EN DESSOUS DE REGISTER) */
 				const response = await fetch(
 					'http://127.0.0.1:8000/api/users/register',
 					requestOptions
 				);
 				if (response.ok) {
-					goHome();
+					goSignIn();
 				} else if (response.status === 303) {
 					const jsonResponse = await response.json();
 					console.log(jsonResponse);
@@ -139,6 +137,7 @@ export const RegisterForm = () => {
 
 	return (
 		<main className={styles.main}>
+			<p className={styles.main_header}>Register</p>
 			<div className={styles.main_div}>
 				<input
 					type='text'
