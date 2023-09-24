@@ -23,6 +23,10 @@
     .main_header {
         margin-bottom: 10%;
     }
+
+    .main_signInError {
+        margin-top: -5%;
+    }
 }
 @media all and (min-width: 850px) {
     .main {
@@ -48,6 +52,10 @@
 
     .main_header {
         margin-bottom: 5%;
+    }
+
+    .main_signInError {
+        margin-top: -5%;
     }
 }
 @media all and (min-width: 1500px) {
@@ -130,6 +138,7 @@
 .main_passwordError, .main_usernameError {
     color: darkred;
     display: none;
+
 }
 
 .main_header {

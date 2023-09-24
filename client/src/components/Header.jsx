@@ -18,6 +18,17 @@ export const Header = () => {
 		navigate(path);
 	};
 
+	const goLogOut = () => {
+		let path = '/';
+		localStorage.removeItem('accessToken');
+		localStorage.removeItem('username');
+		navigate(path);
+	};
+
+	const isUserLoggedIn = JSON.parse(localStorage.getItem('accessToken'))
+		? true
+		: false;
+
 	return (
 		<>
 			<header className={styles.header}>
@@ -38,11 +49,10 @@ export const Header = () => {
 				</div>
 				<div className={styles.header_container_right}>
 					<div className={styles.header_button}>
-						{/* login or logout check if user is connected */}
 						<p
 							className={styles.header_log}
-							onClick={goSignIn}>
-							Login
+							onClick={isUserLoggedIn ? goLogOut : goSignIn}>
+							{isUserLoggedIn ? 'Logout' : 'Login'}
 						</p>
 					</div>
 				</div>

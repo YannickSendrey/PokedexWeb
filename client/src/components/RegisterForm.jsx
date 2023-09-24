@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 export const RegisterForm = () => {
 	const navigate = useNavigate();
-	const goHome = () => {
+	const goSignIn = () => {
 		let path = '/sign-in';
 		navigate(path);
 	};
@@ -71,7 +71,7 @@ export const RegisterForm = () => {
 					requestOptions
 				);
 				if (response.ok) {
-					goHome();
+					goSignIn();
 				} else if (response.status === 303) {
 					const jsonResponse = await response.json();
 					console.log(jsonResponse);

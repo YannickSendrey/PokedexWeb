@@ -6,6 +6,12 @@ export const SignInForm = () => {
 	const navigate = useNavigate();
 	const [username, setUsername] = useState('');
 	const [password, setPassword] = useState('');
+	const [signInError, setSignInError] = useState(false);
+
+	const goHome = () => {
+		let path = '/pokemons';
+		navigate(path);
+	};
 
 	const handleUsernameChange = (event) => {
 		const inputUsername = event.target.value;
@@ -17,7 +23,34 @@ export const SignInForm = () => {
 		setPassword(inputPassword);
 	};
 
-	const handleSubmit = async () => {};
+	const handleSubmit = async () => {
+		const requestOptions = {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify({ username: username, password: password }),
+		};
+
+		try {
+			const response = await fetch(
+				'http://127.0.0.1:8000/api/users/sign-in',
+				requestOptions
+			);
+			if (response.ok) {
+				const jsonResponse = await response.json();
+				localStorage.setItem('accessToken', JSON.stringify(jsonResponse.token));
+				localStorage.setItem('username', jsonResponse.user.username);
+				goHome();
+				// stockage de la session etc
+			} else if (response.status === 404) {
+				const jsonResponse = await response.json();
+				setSignInError(true);
+			}
+		} catch (error) {
+			console.error(error);
+		}
+	};
 
 	return (
 		<main className={styles.main}>
@@ -47,6 +80,13 @@ export const SignInForm = () => {
 					<p className={styles.main_link}>Log me in !</p>
 				</div>
 			</div>
+			<p
+				className={`${styles.main_passwordError} ${styles.main_text} ${styles.main_signInError}`}
+				style={{
+					display: signInError ? 'block' : 'none',
+				}}>
+				No User matches these credentials
+			</p>
 		</main>
 	);
 };
