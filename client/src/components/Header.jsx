@@ -18,11 +18,26 @@ export const Header = () => {
 		navigate(path);
 	};
 
-	const goLogOut = () => {
+	const goLogOut = async () => {
 		let path = '/';
-		localStorage.removeItem('accessToken');
-		localStorage.removeItem('username');
-		navigate(path);
+		try {
+			const response = await fetch('http://127.0.0.1:8000/api/users/logout', {
+				method: 'POST',
+				headers: {
+					Authorization: `Bearer ${localStorage.getItem('accessToken')}`,
+					'Content-Type': 'application/json',
+				},
+			});
+
+			if (response.ok) {
+				localStorage.removeItem('accessToken');
+				localStorage.removeItem('username');
+
+				navigate(path);
+			}
+		} catch (error) {
+			console.error(error);
+		}
 	};
 
 	const isUserLoggedIn = JSON.parse(localStorage.getItem('accessToken'))

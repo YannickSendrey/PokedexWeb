@@ -58,9 +58,8 @@ class UserController extends Controller {
     }
 
     public function logout(Request $request) {
-        User::logout();
+        Auth::logout();
         // end user session
-        $request->session()->invalidate();
 
         return response()->json('User has been disconnected', 200);
     }
