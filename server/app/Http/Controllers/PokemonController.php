@@ -49,12 +49,19 @@ class PokemonController extends Controller {
         return $pokemon;
     }
 
-    public function addToFavorite(Request $request) {
+    public function getFavorites($userId) {
+        $user = User::find($userId);
 
-        $request->validate([
-            'pokemonId' => 'required',
-            'userId' => 'required',
-        ]);
+        if (!$user) {
+            return response()->json('No User matches this id...', 404);
+        }
+
+        $favorites = $user->pokemons;
+
+        return response()->json($favorites, 200);
+    }
+
+    public function addToFavorite(Request $request) {
 
         $user = User::find($request->input('userId'));
         if (!$user) {

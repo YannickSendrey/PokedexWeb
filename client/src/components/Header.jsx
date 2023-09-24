@@ -8,13 +8,19 @@ import { useDispatch } from 'react-redux';
 export const Header = () => {
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
+	let path = '';
 	const goHome = () => {
-		let path = '/pokemons';
+		path = '/pokemons';
 		navigate(path);
 		dispatch(loadAllPokemons());
 	};
 	const goSignIn = () => {
-		let path = '/sign-in';
+		path = '/sign-in';
+		navigate(path);
+	};
+
+	const goProfile = () => {
+		path = '/profile';
 		navigate(path);
 	};
 
@@ -72,6 +78,17 @@ export const Header = () => {
 					</div>
 				</div>
 			</header>
+			<div
+				className={`${styles.header_button} ${styles.header_profile}`}
+				style={{
+					display: isUserLoggedIn ? 'block' : 'none',
+				}}>
+				<p
+					className={styles.header_log}
+					onClick={goProfile}>
+					Profile
+				</p>
+			</div>
 			<Outlet />{' '}
 			{/* outlet is used in react-router to display the rest of our page below our header */}
 		</>

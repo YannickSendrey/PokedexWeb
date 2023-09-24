@@ -41,6 +41,7 @@ export const SignInForm = () => {
 				const jsonResponse = await response.json();
 				localStorage.setItem('accessToken', JSON.stringify(jsonResponse.token));
 				localStorage.setItem('username', jsonResponse.user.username);
+				localStorage.setItem('userId', jsonResponse.user.id);
 				goHome();
 				// stockage de la session etc
 			} else if (response.status === 404) {
