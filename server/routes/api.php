@@ -31,3 +31,4 @@ Route::delete('/pokemons/remove/{userId}/{pokemonId}', [PokemonController::class
 Route::post('/users/register', [UserController::class, 'register']);
 Route::post('/users/sign-in', [UserController::class, 'signIn']);
 Route::post('/users/logout', [UserController::class, 'logout']);
+Route::get('users/{userId}/favorites', [PokemonController::class, 'getFavorites']);

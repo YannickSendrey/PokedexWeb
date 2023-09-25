@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import styles from '../css/forms.module.css';
 import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { loadFavoritePokemons } from '../features/PokemonBoard/pokemonBoardSlice';
 
 export const SignInForm = () => {
+	const dispatch = useDispatch();
 	const navigate = useNavigate();
 	const [username, setUsername] = useState('');
 	const [password, setPassword] = useState('');
@@ -41,8 +44,9 @@ export const SignInForm = () => {
 				const jsonResponse = await response.json();
 				localStorage.setItem('accessToken', JSON.stringify(jsonResponse.token));
 				localStorage.setItem('username', jsonResponse.user.username);
+				localStorage.setItem('userId', jsonResponse.user.id);
+				dispatch(loadFavoritePokemons(jsonResponse.user.id));
 				goHome();
-				// stockage de la session etc
 			} else if (response.status === 404) {
 				const jsonResponse = await response.json();
 				setSignInError(true);
@@ -61,6 +65,7 @@ export const SignInForm = () => {
 					className={`${styles.main_innerDiv} ${styles.main_innerDiv_input}`}
 					placeholder='Enter your Username'
 					value={username}
+					name='username'
 					onChange={handleUsernameChange}></input>
 			</div>
 
@@ -70,6 +75,7 @@ export const SignInForm = () => {
 					className={`${styles.main_innerDiv} ${styles.main_innerDiv_input}`}
 					placeholder='Choose your Password'
 					value={password}
+					name='password'
 					onChange={handlePasswordChange}></input>
 			</div>
 

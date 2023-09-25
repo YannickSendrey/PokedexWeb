@@ -1,20 +1,29 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import styles from '../css/header.module.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { loadAllPokemons } from '../features/PokemonBoard/pokemonBoardSlice';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectFavoritePokemons } from '../features/PokemonBoard/pokemonBoardSlice';
 
 export const Header = () => {
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
+	const location = useLocation();
+	let path = '';
+
 	const goHome = () => {
-		let path = '/pokemons';
+		path = '/pokemons';
 		navigate(path);
 		dispatch(loadAllPokemons());
 	};
 	const goSignIn = () => {
-		let path = '/sign-in';
+		path = '/sign-in';
+		navigate(path);
+	};
+
+	const goProfile = () => {
+		path = '/profile';
 		navigate(path);
 	};
 
@@ -72,6 +81,21 @@ export const Header = () => {
 					</div>
 				</div>
 			</header>
+			<div
+				className={`${styles.header_button} ${styles.header_profile}`}
+				/* only display profile button if user logged in and not already on profile page */
+				style={{
+					display:
+						isUserLoggedIn && location.pathname !== '/profile'
+							? 'block'
+							: 'none',
+				}}>
+				<p
+					className={styles.header_log}
+					onClick={goProfile}>
+					Profile
+				</p>
+			</div>
 			<Outlet />{' '}
 			{/* outlet is used in react-router to display the rest of our page below our header */}
 		</>

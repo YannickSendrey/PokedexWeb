@@ -24,11 +24,23 @@ export const loadOnePokemon = createAsyncThunk(
 	}
 );
 
+export const loadFavoritePokemons = createAsyncThunk(
+	'pokemonBoard/loadFavoritePokemons',
+	async (userId) => {
+		const data = await fetch(
+			`http://127.0.0.1:8000/api/users/${userId}/favorites`
+		);
+		const json = await data.json();
+		return json;
+	}
+);
+
 export const pokemonBoardSlice = createSlice({
 	name: 'pokemonBoard',
 	initialState: {
 		pokemons: [],
 		pokemon: {},
+		favoritePokemons: [],
 		isLoadingPokemons: false,
 		hasError: false,
 	},
@@ -64,6 +76,21 @@ export const pokemonBoardSlice = createSlice({
 				state.isLoadingPokemons = false;
 				state.pokemon = [];
 				state.hasError = true;
+			})
+			.addCase(loadFavoritePokemons.pending, (state) => {
+				state.isLoadingPokemons = true;
+				state.favoritePokemons = [];
+				state.hasError = false;
+			})
+			.addCase(loadFavoritePokemons.fulfilled, (state, action) => {
+				state.isLoadingPokemons = false;
+				state.favoritePokemons = action.payload;
+				state.hasError = false;
+			})
+			.addCase(loadFavoritePokemons.rejected, (state) => {
+				state.isLoadingPokemons = false;
+				state.favoritePokemons = [];
+				state.hasError = true;
 			});
 	},
 });
@@ -71,5 +98,7 @@ export const pokemonBoardSlice = createSlice({
 export const selectAllPokemons = (state) => state.pokemonBoard.pokemons;
 export const selectOnePokemon = (state) => state.pokemonBoard.pokemon;
 export const selectIsLoading = (state) => state.pokemonBoard.isLoadingPokemons;
+export const selectFavoritePokemons = (state) =>
+	state.pokemonBoard.favoritePokemons;
 
 export default pokemonBoardSlice.reducer;
