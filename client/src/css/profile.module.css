@@ -1,0 +1,45 @@
+@media all and (max-width: 849px) {
+    .profile_section {
+        height: 600px;
+        width: 80%;
+    }
+}
+@media all and (min-width: 850px) {}
+@media all and (min-width: 1500px) {}
+
+.profile {
+
+}
+
+.profile_p {
+
+}
+
+.profile_section {
+    border: 4px solid rgba(75, 99, 133, 0.262);
+    margin: 0 auto;
+}
+
+.profile_section_h2 {
+
+}
+
+.tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(75, 99, 133, 0.262);
+}
+
+.tile_img {
+
+}
+
+.tile_name {
+
+}
+
+.tile_delete {
+
+}

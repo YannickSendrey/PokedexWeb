@@ -144,6 +144,7 @@ export const RegisterForm = () => {
 					className={`${styles.main_innerDiv} ${styles.main_innerDiv_input}`}
 					placeholder='Choose your Username'
 					value={username}
+					name='username'
 					onChange={handleUsernameChange}></input>
 				<p className={styles.main_text}>only alphanumerical characters</p>
 			</div>
@@ -154,6 +155,7 @@ export const RegisterForm = () => {
 					className={`${styles.main_innerDiv} ${styles.main_innerDiv_input}`}
 					placeholder='Choose your Password'
 					value={password}
+					name='password'
 					onChange={handlePasswordChange}></input>
 				<p className={styles.main_text}>
 					atleast : <br />
