@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 export const PokemonTile = ({ pokemonId }) => {
 	const pokemons = useSelector(selectAllPokemons);
 	const pokemon = pokemons.find((pokemon) => pokemon.id === pokemonId);
-	const { id, picture, name, number } = pokemon;
+	const { picture, name, number } = pokemon;
 
 	const navigate = useNavigate();
 	const goToPokemon = () => {

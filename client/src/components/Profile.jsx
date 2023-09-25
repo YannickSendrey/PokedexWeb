@@ -46,5 +46,3 @@ export const Profile = () => {
 		</main>
 	);
 };
-
-/* onClick dispatch(delete from State + requête delete API) */

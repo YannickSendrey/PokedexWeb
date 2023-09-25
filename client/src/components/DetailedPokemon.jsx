@@ -53,6 +53,29 @@ export const DetailedPokemon = () => {
 		if (stat < 256) return 'rgba(21, 48, 203, 0.702)';
 	};
 
+	// handle addPokemonToFavorite if user logged in
+	const handleClick = async () => {
+		const requestOptions = {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify({
+				pokemonId: pokemon.number,
+				userId: localStorage.getItem('userId'),
+			}),
+		};
+
+		try {
+			const response = await fetch(
+				'http://127.0.0.1:8000/api/pokemons/add',
+				requestOptions
+			);
+		} catch (error) {
+			console.error(error);
+		}
+	};
+
 	return (
 		<main className={styles.main}>
 			<section className={styles.main_section}>
@@ -62,6 +85,12 @@ export const DetailedPokemon = () => {
 						alt={`${pokemon.name}`}
 						className={styles.main_section_img}
 					/>
+					<div
+						className={styles.main_section_add}
+						onClick={handleClick}
+						style={{
+							display: localStorage.getItem('userId') ? 'block' : 'none',
+						}}></div>
 				</div>
 				<div className={styles.main_section_stats}>
 					<p className={styles.main_section_stats_text}>HP</p>

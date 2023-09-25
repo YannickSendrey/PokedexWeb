@@ -3,8 +3,7 @@ import { Outlet } from 'react-router-dom';
 import styles from '../css/header.module.css';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { loadAllPokemons } from '../features/PokemonBoard/pokemonBoardSlice';
-import { useDispatch, useSelector } from 'react-redux';
-import { selectFavoritePokemons } from '../features/PokemonBoard/pokemonBoardSlice';
+import { useDispatch } from 'react-redux';
 
 export const Header = () => {
 	const dispatch = useDispatch();
@@ -41,6 +40,7 @@ export const Header = () => {
 			if (response.ok) {
 				localStorage.removeItem('accessToken');
 				localStorage.removeItem('username');
+				localStorage.removeItem('userId');
 
 				navigate(path);
 			}
