@@ -1,13 +1,9 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
-import { selectAllPokemons } from '../features/PokemonBoard/pokemonBoardSlice';
 import styles from '../css/profile.module.css';
 import { useNavigate } from 'react-router-dom';
 
-export const ProfilePokemonTile = ({ pokemonId }) => {
-	const pokemons = useSelector(selectAllPokemons);
-	const pokemon = pokemons.find((pokemon) => pokemon.id === pokemonId);
-	const { id, picture, name, number } = pokemon;
+export const ProfilePokemonTile = ({ pokemon }) => {
+	const { picture, name, number } = pokemon;
 
 	const navigate = useNavigate();
 	const goToPokemon = () => {
@@ -26,9 +22,9 @@ export const ProfilePokemonTile = ({ pokemonId }) => {
 			<p
 				className={styles.tile_name}
 				onClick={goToPokemon}>
-				{name}
+				#{number} {name}
 			</p>
-			<div className={styles.tile_delete}></div>
+			<div className={styles.tile_delete}>Delete</div>
 		</>
 	);
 };

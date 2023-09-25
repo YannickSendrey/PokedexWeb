@@ -1,14 +1,19 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import styles from '../css/header.module.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { loadAllPokemons } from '../features/PokemonBoard/pokemonBoardSlice';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectFavoritePokemons } from '../features/PokemonBoard/pokemonBoardSlice';
 
 export const Header = () => {
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
+	const location = useLocation();
+	const favs = useSelector(selectFavoritePokemons);
+	console.log(favs);
 	let path = '';
+
 	const goHome = () => {
 		path = '/pokemons';
 		navigate(path);
@@ -80,8 +85,12 @@ export const Header = () => {
 			</header>
 			<div
 				className={`${styles.header_button} ${styles.header_profile}`}
+				/* only display profile button if user logged in and not already on profile page */
 				style={{
-					display: isUserLoggedIn ? 'block' : 'none',
+					display:
+						isUserLoggedIn && location.pathname !== '/profile'
+							? 'block'
+							: 'none',
 				}}>
 				<p
 					className={styles.header_log}

@@ -30,7 +30,7 @@ export const Profile = () => {
 							<div
 								className={styles.tile}
 								key={i}>
-								{pokemon && <ProfilePokemonTile id={pokemon.id} />}
+								{pokemon && <ProfilePokemonTile pokemon={pokemon} />}
 							</div>
 						);
 					}
