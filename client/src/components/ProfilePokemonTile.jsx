@@ -1,14 +1,34 @@
 import React from 'react';
 import styles from '../css/profile.module.css';
+import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import { loadFavoritePokemons } from '../features/PokemonBoard/pokemonBoardSlice';
 
 export const ProfilePokemonTile = ({ pokemon }) => {
 	const { picture, name, number } = pokemon;
+	const userId = localStorage.getItem('userId');
 
+	const dispatch = useDispatch();
 	const navigate = useNavigate();
 	const goToPokemon = () => {
-		let path = '/pokemons/' + number;
+		const path = '/pokemons/' + number;
 		navigate(path);
+	};
+
+	const handleClick = async () => {
+		try {
+			const response = await fetch(
+				`http://127.0.0.1:8000/api/pokemons/remove/${userId}/${number}`,
+				{ method: 'DELETE' }
+			);
+
+			if (response.ok) {
+				console.log('super');
+				dispatch(loadFavoritePokemons(userId));
+			}
+		} catch (error) {
+			console.error(error);
+		}
 	};
 
 	return (
@@ -24,7 +44,11 @@ export const ProfilePokemonTile = ({ pokemon }) => {
 				onClick={goToPokemon}>
 				#{number} {name}
 			</p>
-			<div className={styles.tile_delete}>Delete</div>
+			<div
+				className={styles.tile_delete}
+				onClick={handleClick}>
+				Remove
+			</div>
 		</>
 	);
 };

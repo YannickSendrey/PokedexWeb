@@ -10,8 +10,6 @@ export const Header = () => {
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
 	const location = useLocation();
-	const favs = useSelector(selectFavoritePokemons);
-	console.log(favs);
 	let path = '';
 
 	const goHome = () => {

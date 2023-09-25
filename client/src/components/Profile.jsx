@@ -1,19 +1,25 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useSelector } from 'react-redux';
-import { selectFavoritePokemons } from '../features/PokemonBoard/pokemonBoardSlice';
+import { useSelector, useDispatch } from 'react-redux';
+import {
+	selectFavoritePokemons,
+	loadFavoritePokemons,
+} from '../features/PokemonBoard/pokemonBoardSlice';
 import { ProfilePokemonTile } from './ProfilePokemonTile';
 import styles from '../css/profile.module.css';
 
 export const Profile = () => {
+	const dispatch = useDispatch();
 	const navigate = useNavigate();
 	const username = localStorage.getItem('username');
 	const favoritePokemons = useSelector(selectFavoritePokemons);
+	const userId = localStorage.getItem('userId');
 
 	useEffect(() => {
 		if (!localStorage.getItem('username')) {
 			navigate('/sign-in');
 		}
+		dispatch(loadFavoritePokemons(userId));
 	}, []);
 
 	return (
