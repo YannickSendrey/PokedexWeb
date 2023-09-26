@@ -3,7 +3,7 @@ FROM --platform=linux/amd64 php:8.2.6-fpm-alpine3.18
 ARG IPE_GD_WITHOUTAVIF=1
 ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
 RUN chmod +x /usr/local/bin/install-php-extensions && \
-    install-php-extensions bcmath gd gettext intl mcrypt opcache pcntl pdo_pgsql xsl zip
+    install-php-extensions bcmath gd gettext intl mcrypt mysqli opcache pcntl pdo_pgsql xsl zip
 RUN apk --update add \
     supervisor \
     nginx &&\
