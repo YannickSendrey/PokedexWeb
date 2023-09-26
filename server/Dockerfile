@@ -14,6 +14,7 @@ COPY docker/conf/php /usr/local/etc
 COPY docker/conf/supervisor /etc/supervisor
 # COPY .env.example .env
 RUN mkdir -p /var/run/php
+RUN composer install
 RUN php artisan config:cache
 EXPOSE 80
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
