@@ -12,7 +12,7 @@ COPY --chown=www-data:www-data . /var/www/html
 COPY docker/conf/nginx /etc/nginx
 COPY docker/conf/php /usr/local/etc
 COPY docker/conf/supervisor /etc/supervisor
-COPY .env.example .env
+# COPY .env.example .env
 RUN mkdir -p /var/run/php
 RUN php artisan config:cache
 EXPOSE 80
