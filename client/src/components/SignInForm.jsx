@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from '../css/forms.module.css';
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { loadFavoritePokemons } from '../features/PokemonBoard/pokemonBoardSlice';
 
@@ -58,7 +58,18 @@ export const SignInForm = () => {
 
 	return (
 		<main className={styles.main}>
-			<p className={styles.main_header}>Sign in</p>
+			<p className={styles.main_header}>
+				Sign in <br />
+				<span className={styles.main_header_span}>
+					Don't have an account yet ?{' '}
+					<NavLink
+						className={styles.main_link}
+						to='/register'>
+						Register here
+					</NavLink>
+				</span>
+			</p>
+
 			<div className={styles.main_div}>
 				<input
 					type='text'
