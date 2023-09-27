@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
+import { API_URL } from '../utils/constant';
 import {
 	loadOnePokemon,
 	selectOnePokemon,
@@ -67,10 +68,7 @@ export const DetailedPokemon = () => {
 		};
 
 		try {
-			const response = await fetch(
-				'http://127.0.0.1:8000/api/pokemons/add',
-				requestOptions
-			);
+			const response = await fetch(`${API_URL}/pokemons/add`, requestOptions);
 		} catch (error) {
 			console.error(error);
 		}

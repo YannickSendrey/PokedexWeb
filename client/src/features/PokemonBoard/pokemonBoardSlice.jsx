@@ -1,4 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import { API_URL } from '../../utils/constant.js';
 
 export const loadAllPokemons = createAsyncThunk(
 	'pokemonBoard/loadAllPokemons',
@@ -6,9 +7,9 @@ export const loadAllPokemons = createAsyncThunk(
 		let data = [];
 
 		if (!region) {
-			data = await fetch('http://127.0.0.1/api/pokemons/');
+			data = await fetch(`${API_URL}/pokemons`);
 		} else {
-			data = await fetch(`http://127.0.0.1:8000/api/pokemons/region/${region}`);
+			data = await fetch(`${API_URL}/pokemons/region/${region}`);
 		}
 		const json = await data.json();
 		return json;
@@ -18,7 +19,7 @@ export const loadAllPokemons = createAsyncThunk(
 export const loadOnePokemon = createAsyncThunk(
 	'pokemonBoard/loadOnePokemon',
 	async (id) => {
-		const data = await fetch(`http://127.0.0.1:8000/api/pokemons/${id}`);
+		const data = await fetch(`${API_URL}/pokemons/${id}`);
 		const json = await data.json();
 		return json;
 	}
@@ -27,9 +28,7 @@ export const loadOnePokemon = createAsyncThunk(
 export const loadFavoritePokemons = createAsyncThunk(
 	'pokemonBoard/loadFavoritePokemons',
 	async (userId) => {
-		const data = await fetch(
-			`http://127.0.0.1:8000/api/users/${userId}/favorites`
-		);
+		const data = await fetch(`${API_URL}/users/${userId}/favorites`);
 		const json = await data.json();
 		return json;
 	}

@@ -3,6 +3,7 @@ import styles from '../css/forms.module.css';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { loadFavoritePokemons } from '../features/PokemonBoard/pokemonBoardSlice';
+import { API_URL } from '../utils/constant';
 
 export const SignInForm = () => {
 	const dispatch = useDispatch();
@@ -36,10 +37,7 @@ export const SignInForm = () => {
 		};
 
 		try {
-			const response = await fetch(
-				'http://127.0.0.1:8000/api/users/sign-in',
-				requestOptions
-			);
+			const response = await fetch(`${API_URL}/users/sign-in`, requestOptions);
 			if (response.ok) {
 				const jsonResponse = await response.json();
 				localStorage.setItem('accessToken', JSON.stringify(jsonResponse.token));
