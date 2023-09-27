@@ -186,3 +186,7 @@
     color:rgb(24, 42, 66);
     filter:invert();
 }
+
+.tile_delete:hover {
+    cursor: pointer;
+}
