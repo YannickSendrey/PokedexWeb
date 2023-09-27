@@ -6,7 +6,7 @@ export const loadAllPokemons = createAsyncThunk(
 		let data = [];
 
 		if (!region) {
-			data = await fetch('http://127.0.0.1:8000/api/pokemons');
+			data = await fetch('http://127.0.0.1/api/pokemons/');
 		} else {
 			data = await fetch(`http://127.0.0.1:8000/api/pokemons/region/${region}`);
 		}
