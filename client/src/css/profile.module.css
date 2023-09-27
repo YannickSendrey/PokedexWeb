@@ -187,6 +187,6 @@
     filter:invert();
 }
 
-.tile_delete:hover {
+.tile_delete:hover, .tile_img, .tile_name {
     cursor: pointer;
 }
