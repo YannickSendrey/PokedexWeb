@@ -3,6 +3,7 @@ import styles from '../css/profile.module.css';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { loadFavoritePokemons } from '../features/PokemonBoard/pokemonBoardSlice';
+import { API_URL } from '../utils/constant';
 
 export const ProfilePokemonTile = ({ pokemon }) => {
 	const { picture, name, number } = pokemon;
@@ -18,7 +19,7 @@ export const ProfilePokemonTile = ({ pokemon }) => {
 	const handleClick = async () => {
 		try {
 			const response = await fetch(
-				`http://127.0.0.1:8000/api/pokemons/remove/${userId}/${number}`,
+				`${API_URL}/pokemons/remove/${userId}/${number}`,
 				{ method: 'DELETE' }
 			);
 
