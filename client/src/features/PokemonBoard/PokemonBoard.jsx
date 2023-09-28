@@ -50,10 +50,10 @@ export const PokemonBoard = () => {
 					name='region'
 					id='region'
 					onChange={handleSelectChange}
+					defaultValue={''}
 					className={styles.main_select}>
 					<option
 						disabled='disabled'
-						selected='selected'
 						value=''>
 						Filter by region
 					</option>

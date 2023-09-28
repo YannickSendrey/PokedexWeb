@@ -1,5 +1,6 @@
 @media all and (max-width: 500px) {
     .main_section {
+        width: 90%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -36,8 +37,8 @@
         margin-top: 0;
     }
     .main_section_add {
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        height: 40px;
         top: 8%;
         }
 
@@ -58,6 +59,7 @@
 
 @media all and (min-width: 501px) {
     .main_section {
+        width: 90%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -95,8 +97,8 @@
     }
 
     .main_section_add {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     top: 8%;
     }
 
@@ -117,6 +119,7 @@
 
 @media all and (min-width: 650px) {
     .main_section {
+        width: 80%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -176,6 +179,7 @@
 
 @media all and (min-width: 801px) {
     .main_section {
+        width: 50%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -203,7 +207,7 @@
     .main_desc {
         gap: 10px;
         width: 70%;
-        height: 1.6em;
+        height: 1.8em;
     }
 
     .main_section_divImg {
@@ -265,7 +269,7 @@
 
     .main_desc {
         gap: 10px;
-        width: 50%;
+        width: 70%;
         height: 2.2em;
         font-size: 1.4em;
     }
@@ -335,7 +339,7 @@
 
     .main_desc {
         gap: 10px;
-        width: 50%;
+        width: 70%;
         height: 2.2em;
         font-size: 1.4em;
     }
@@ -366,7 +370,6 @@
 @media all and (min-width: 1300px) {
     .main_section {
         width: 90%;
-        height: 700px;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -397,7 +400,7 @@
 
     .main_desc {
         gap: 10px;
-        width: 50%;
+        width: 60%;
         height: 2.2em;
         font-size: 1.4em;
     }
@@ -410,7 +413,7 @@
     .main_section_add {
         width: 60px;
         height: 60px;
-        top: 25%;
+        top: 15%;
     }
 
         .arrow {
