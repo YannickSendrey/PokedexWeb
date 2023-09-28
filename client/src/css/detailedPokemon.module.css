@@ -536,3 +536,6 @@
     transform: rotate(-50deg);
   }
 
+.container_arrowleft, .container_arrowright {
+    cursor: pointer;
+}

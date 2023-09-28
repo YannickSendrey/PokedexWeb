@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { API_URL } from '../utils/constant';
 import {
@@ -9,6 +9,7 @@ import {
 import styles from '../css/detailedPokemon.module.css';
 
 export const DetailedPokemon = () => {
+	const navigate = useNavigate();
 	const dispatch = useDispatch();
 	const { id } = useParams();
 
@@ -74,11 +75,38 @@ export const DetailedPokemon = () => {
 		}
 	};
 
+	const handlePreviousClick = () => {
+		// faire une requête async pour load les données du futur pokemon ? on va test sans
+		let newPokemonNumber;
+		if (pokemon.number === 1) {
+			newPokemonNumber = 649;
+		} else {
+			newPokemonNumber = pokemon.number - 1;
+		}
+		const path = `/pokemons/${newPokemonNumber}`;
+		dispatch(loadOnePokemon(newPokemonNumber));
+		navigate(path);
+	};
+
+	const handleNextClick = () => {
+		let newPokemonNumber;
+		if (pokemon.number === 649) {
+			newPokemonNumber = 1;
+		} else {
+			newPokemonNumber = pokemon.number + 1;
+		}
+		const path = `/pokemons/${newPokemonNumber}`;
+		dispatch(loadOnePokemon(newPokemonNumber));
+		navigate(path);
+	};
+
 	return (
 		<main className={styles.main}>
 			<section className={styles.main_section}>
 				<div className={styles.main_section_top}>
-					<div className={styles.container_arrowleft}>
+					<div
+						className={styles.container_arrowleft}
+						onClick={handlePreviousClick}>
 						<i className={`${styles.arrow} ${styles.arrow_left}`}></i>
 					</div>
 					<div className={styles.main_section_divImg}>
@@ -94,7 +122,9 @@ export const DetailedPokemon = () => {
 								display: localStorage.getItem('userId') ? 'block' : 'none',
 							}}></div>
 					</div>
-					<div className={styles.container_arrowright}>
+					<div
+						className={styles.container_arrowright}
+						onClick={handleNextClick}>
 						<i className={`${styles.arrow} ${styles.arrow_right}`}></i>
 					</div>
 				</div>
