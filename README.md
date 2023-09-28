@@ -23,11 +23,12 @@ Several features on this one :
 - search for a specific name while in homePage 
 - access a specific pokemon and its detailed data via several ways (onClick image/name, searchInput)
 
-Had the occasion for the first time to handle a register/login/logout via **JWT tokens**
-
+Had the occasion for the first time to handle a register/login/logout via **JWT tokens** <br/><br/>
 A feature is only accessible while logged in :
 - add up to 6 pokemons to your team from their detailed data page
-- navigate to your profile to see them / remove any of them
+- navigate to your profile to see them / remove any of them <br/>
+
+**⭐important : if anyone wants to register to try this feature, be sure to use a random password which you don't use anywhere else ! Even though the database is secured you don't wanna risk anything ⭐**
 
 ## Design
 
