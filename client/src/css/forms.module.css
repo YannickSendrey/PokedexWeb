@@ -1,4 +1,43 @@
-@media all and (max-width: 849px) {
+@media all and (max-width: 600px) {
+    .main {
+        margin-top: 15%;
+    }
+
+    .main_innerDiv {
+        font-size: 1.1em;
+    }
+
+    .main_text {
+        font-size: 0.6em;
+    }
+
+    .main_header {
+        font-size: 1.4em;
+    }
+
+    .main_div {
+        width: 70%;
+        margin-bottom: 8%;
+    }
+
+    .main_header {
+        margin-bottom: 10%;
+    }
+
+    .main_signInError {
+        margin-top: -5%;
+    }
+    .main_header_span {
+        font-size: 0.6em;
+    }
+
+    .main_innerDiv_input::placeholder {
+        font-size: 1em;
+    }
+
+}
+
+@media all and (min-width: 601px) {
     .main {
         margin-top: 15%;
     }
@@ -29,6 +68,10 @@
     }
     .main_header_span {
         font-size: 0.7em;
+    }
+
+    .main_innerDiv_input::placeholder {
+        font-size: 1.1em;
     }
 }
 @media all and (min-width: 850px) {
@@ -159,3 +202,6 @@
 }
 
 
+.main_innerDiv_input::placeholder {
+    text-align: center;
+}

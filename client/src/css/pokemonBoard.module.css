@@ -1,4 +1,28 @@
-@media all and (max-width: 849px) {
+@media all and (max-width: 500px) {
+    .main_select {
+        height: 2.6em;
+        width: 40%;
+        font-size: 0.9em;
+    }
+
+    .tile {
+        flex-basis: calc(33.33% - 4px);
+    }
+
+    .tile_img {
+        width: 100px;
+    }
+
+    .tile_name {
+        font-size: 1em;
+    }
+
+    .main_select_text {
+        font-size: 1.1em;
+    }
+}
+
+@media all and (min-width: 501px) {
     .main_select {
         height: 2.6em;
         width: 25%;

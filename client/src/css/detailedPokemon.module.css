@@ -1,4 +1,43 @@
-@media all and (max-width: 849px) {
+@media all and (max-width: 800px) {
+    .main_section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main_section_img {
+        width: 75%;
+    }
+
+    .main_section_stats {
+        margin-top: 3%;
+        margin-bottom: 3%;
+        width: 100%;
+    }
+
+    .main_section_stats_hp, .main_section_stats_atk, .main_section_stats_def, .main_section_stats_atkspe, .main_section_stats_defspe, .main_section_stats_speed  {
+        height: 1em;
+    }
+
+
+    .main_desc {
+        gap: 10px;
+        width: 90%;
+        height: 1.4em;
+    }
+
+    .main_section_divImg {
+        margin-top: 0;
+    }
+
+    .main_section_add {
+    width: 60px;
+    height: 60px;
+    bottom: 50px;
+    }
+}
+
+@media all and (min-width: 801px) {
     .main_section {
         flex-direction: column;
         justify-content: center;
