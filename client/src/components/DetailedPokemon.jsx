@@ -56,7 +56,13 @@ export const DetailedPokemon = () => {
 	};
 
 	// handle addPokemonToFavorite if user logged in
-	const handleClick = async () => {
+	const handleClick = async (event) => {
+		event.target.style.backgroundColor = 'green';
+
+		setTimeout(() => {
+			event.target.style.backgroundColor = 'rgba(75, 99, 133, 0.262)';
+		}, 1000);
+
 		const requestOptions = {
 			method: 'POST',
 			headers: {
@@ -76,7 +82,6 @@ export const DetailedPokemon = () => {
 	};
 
 	const handlePreviousClick = () => {
-		// faire une requête async pour load les données du futur pokemon ? on va test sans
 		let newPokemonNumber;
 		if (pokemon.number === 1) {
 			newPokemonNumber = 649;
