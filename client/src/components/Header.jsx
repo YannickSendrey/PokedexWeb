@@ -4,6 +4,7 @@ import styles from '../css/header.module.css';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { loadAllPokemons } from '../features/PokemonBoard/pokemonBoardSlice';
 import { useDispatch } from 'react-redux';
+import { API_URL } from '../utils/constant';
 
 export const Header = () => {
 	const dispatch = useDispatch();
@@ -29,7 +30,7 @@ export const Header = () => {
 	const goLogOut = async () => {
 		let path = '/';
 		try {
-			const response = await fetch('http://127.0.0.1:8000/api/users/logout', {
+			const response = await fetch(`${API_URL}/users/logout`, {
 				method: 'POST',
 				headers: {
 					Authorization: `Bearer ${localStorage.getItem('accessToken')}`,
