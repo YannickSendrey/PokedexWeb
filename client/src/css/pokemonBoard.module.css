@@ -20,6 +20,10 @@
     .main_select_text {
         font-size: 1.1em;
     }
+
+    .main_input {
+        top: 10%;
+    }
 }
 
 @media all and (min-width: 501px) {
@@ -27,6 +31,10 @@
         height: 2.6em;
         width: 25%;
         font-size: 0.9em;
+    }
+
+    .main_input {
+        top: 10%;
     }
 
     .tile {
@@ -50,6 +58,10 @@
         height: 3em;
         width: 20%;
         font-size: 1em;
+    }
+
+    .main_input {
+        bottom: 70px;
     }
 
     .tile {
@@ -114,7 +126,6 @@
 
 .main_input {
     position: fixed;
-    bottom: 70px;
     width: 50%;
     left: calc(25%);
 }
