@@ -51,7 +51,12 @@ export const PokemonBoard = () => {
 					id='region'
 					onChange={handleSelectChange}
 					className={styles.main_select}>
-					<option value=''>Filter by region</option>
+					<option
+						disabled='disabled'
+						selected='selected'
+						value=''>
+						Filter by region
+					</option>
 					<option value='kanto'>Kanto</option>
 					<option value='johto'>Johto</option>
 					<option value='hoenn'>Hoenn</option>
