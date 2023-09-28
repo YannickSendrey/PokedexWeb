@@ -77,18 +77,26 @@ export const DetailedPokemon = () => {
 	return (
 		<main className={styles.main}>
 			<section className={styles.main_section}>
-				<div className={styles.main_section_divImg}>
-					<img
-						src={pokemon.picture}
-						alt={`${pokemon.name}`}
-						className={styles.main_section_img}
-					/>
-					<div
-						className={styles.main_section_add}
-						onClick={handleClick}
-						style={{
-							display: localStorage.getItem('userId') ? 'block' : 'none',
-						}}></div>
+				<div className={styles.main_section_top}>
+					<div className={styles.container_arrowleft}>
+						<i className={`${styles.arrow} ${styles.arrow_left}`}></i>
+					</div>
+					<div className={styles.main_section_divImg}>
+						<img
+							src={pokemon.picture}
+							alt={`${pokemon.name}`}
+							className={styles.main_section_img}
+						/>
+						<div
+							className={styles.main_section_add}
+							onClick={handleClick}
+							style={{
+								display: localStorage.getItem('userId') ? 'block' : 'none',
+							}}></div>
+					</div>
+					<div className={styles.container_arrowright}>
+						<i className={`${styles.arrow} ${styles.arrow_right}`}></i>
+					</div>
 				</div>
 				<div className={styles.main_section_stats}>
 					<p className={styles.main_section_stats_text}>HP</p>
