@@ -22,9 +22,9 @@ class UserController extends Controller {
         $userWithSameUsername = User::where('username', $username)->first();
         if ($userWithSameUsername) {
             if (Hash::check($password, $userWithSameUsername->password)) {
-                return response()->json('This User already exists...', 303);
+                return response()->json('This User already exists...', 422);
             } else {
-                return response()->json('A user with this Username already exists...', 303);
+                return response()->json('A user with this Username already exists...', 422);
             }
         }
 

@@ -57,25 +57,53 @@ export const DetailedPokemon = () => {
 
 	// handle addPokemonToFavorite if user logged in
 	const handleClick = async (event) => {
-		event.target.style.backgroundColor = 'green';
-
-		setTimeout(() => {
-			event.target.style.backgroundColor = 'rgba(75, 99, 133, 0.262)';
-		}, 1000);
-
-		const requestOptions = {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json',
-			},
-			body: JSON.stringify({
-				pokemonId: pokemon.number,
-				userId: localStorage.getItem('userId'),
-			}),
-		};
+		const userId = localStorage.getItem('userId');
 
 		try {
-			const response = await fetch(`${API_URL}/pokemons/add`, requestOptions);
+			// get pokemons from user, if he has'nt this pokemon in fav, addToFav
+			const data = await fetch(`${API_URL}/users/${userId}/favorites`);
+			const json = await data.json();
+			const isPokemonInFavorites = json.filter(
+				(userPokemon) => userPokemon.number === pokemon.number
+			);
+
+			if (isPokemonInFavorites.length === 0) {
+				const requestOptions = {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json',
+					},
+					body: JSON.stringify({
+						pokemonId: pokemon.number,
+						userId: userId,
+					}),
+				};
+
+				try {
+					const response = await fetch(
+						`${API_URL}/pokemons/add`,
+						requestOptions
+					);
+
+					if (response.ok) {
+						// green response if ok
+						event.target.style.backgroundColor = 'green';
+
+						setTimeout(() => {
+							event.target.style.backgroundColor = 'rgba(75, 99, 133, 0.262)';
+						}, 1000);
+					}
+				} catch (error) {
+					console.error(error);
+				}
+			} else {
+				// red response if ko
+				event.target.style.backgroundColor = 'red';
+
+				setTimeout(() => {
+					event.target.style.backgroundColor = 'rgba(75, 99, 133, 0.262)';
+				}, 1000);
+			}
 		} catch (error) {
 			console.error(error);
 		}

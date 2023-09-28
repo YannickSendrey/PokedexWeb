@@ -63,15 +63,23 @@ class PokemonController extends Controller {
 
     public function addToFavorite(Request $request) {
 
-        $user = User::find($request->input('userId'));
+        $userId = $request->input('userId');
+        $pokemonId = $request->input('pokemonId');
+
+        $user = User::find($userId);
         if (!$user) {
             return response()->json('No User matches this id...', 404);
         }
 
-        $pokemon = Pokemon::find($request->input('pokemonId'));
+        $pokemon = Pokemon::find($pokemonId);
         if (!$pokemon) {
             return response()->json('No Pokemon matches this id...', 404);
         }
+
+        if ($user->pokemons()->where('pokemon_id', $pokemonId)->exists()) {
+            return response()->json('Relation already exists...', 422);
+        }
+
 
         $user->pokemons()->attach($pokemon);
         return response()->json('This pokemon has been added to your favorites !', 201);
@@ -96,7 +104,7 @@ class PokemonController extends Controller {
         $rowExist = $user->pokemons()->wherePivot('pokemon_id', $pokemonId)->exists();
 
         if (!$rowExist) {
-            return response()->json("This pokemon i'snt in your favorites yet...", 404);
+            return response()->json("This pokemon isnt in your favorites yet...", 404);
         }
 
 
