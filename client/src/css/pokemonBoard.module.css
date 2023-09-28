@@ -87,6 +87,10 @@
         font-size: 1.6em;
     }
 
+    .main_input {
+        bottom: 70px;
+    }
+
     .tile {
         flex-basis: calc(16.66667% - 4px);
     }
