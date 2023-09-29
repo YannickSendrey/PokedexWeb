@@ -80,9 +80,9 @@ export const SignInForm = () => {
 
 			<div className={styles.main_div}>
 				<input
-					type='text'
+					type='password'
 					className={`${styles.main_innerDiv} ${styles.main_innerDiv_input}`}
-					placeholder='Choose your Password'
+					placeholder='Enter your Password'
 					value={password}
 					name='password'
 					onChange={handlePasswordChange}></input>
