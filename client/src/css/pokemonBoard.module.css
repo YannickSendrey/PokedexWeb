@@ -164,6 +164,10 @@
     border: 2px solid rgba(75, 99, 133, 0.262);
 }
 
+.tile:hover {
+    background-color: rgba(75, 99, 133, 0.162);
+}
+
 .tile_name {
     margin-bottom: 10px;
 }

@@ -138,3 +138,12 @@
     text-align: center;
     vertical-align: middle;
 }
+
+
+.header_button:hover, .header_profile:hover {
+    background-color: rgba(75, 99, 133, 0.162);
+}
+
+.header_h1:hover {
+    color: rgba(253, 253, 253, 0.232)
+}
