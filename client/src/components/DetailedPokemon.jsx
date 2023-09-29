@@ -92,6 +92,12 @@ export const DetailedPokemon = () => {
 						setTimeout(() => {
 							event.target.style.backgroundColor = 'rgba(75, 99, 133, 0.262)';
 						}, 1000);
+					} else {
+						event.target.style.backgroundColor = 'red';
+
+						setTimeout(() => {
+							event.target.style.backgroundColor = 'rgba(75, 99, 133, 0.262)';
+						}, 1000);
 					}
 				} catch (error) {
 					console.error(error);
