@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from '../css/forms.module.css';
 import { useNavigate, NavLink } from 'react-router-dom';
 
@@ -13,6 +13,13 @@ export const LoginForm = () => {
 		let path = '/register';
 		navigate(path);
 	};
+
+	useEffect(() => {
+		if (localStorage.getItem('userId')) {
+			navigate('/pokemons');
+		}
+	}, []);
+
 	return (
 		<main className={styles.main}>
 			<div className={styles.main_div}>
