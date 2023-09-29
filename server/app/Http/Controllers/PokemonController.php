@@ -69,6 +69,12 @@ class PokemonController extends Controller {
             return response()->json('No Pokemon matches this id...', 404);
         }
 
+        $favoritePokemonCount = $user->pokemons()->count();
+
+        if ($favoritePokemonCount >= 6) {
+            return response()->json('You already have 6 favorite Pokemon. You cannot add more.', 422);
+        }
+
         if ($user->pokemons()->where('pokemon_id', $pokemonId)->exists()) {
             return response()->json('Relation already exists...', 422);
         }
