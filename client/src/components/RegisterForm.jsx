@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from '../css/forms.module.css';
 import { useNavigate } from 'react-router-dom';
+import { API_URL } from '../utils/constant';
 
 export const RegisterForm = () => {
 	const navigate = useNavigate();
@@ -67,7 +68,7 @@ export const RegisterForm = () => {
 
 			try {
 				const response = await fetch(
-					'http://127.0.0.1:8000/api/users/register',
+					`${API_URL}/users/register`,
 					requestOptions
 				);
 				if (response.ok) {
