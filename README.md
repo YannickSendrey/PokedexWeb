@@ -18,7 +18,7 @@ I went more in-depth in this one than the 1st one, had the occasion to :
 ## App
 
 Several features on this one :
-- browse all pokemons up to gen V (included)
+- browse all pokemons up to gen IX (included)
 - filter them by region
 - search for a specific name while in homePage 
 - access a specific pokemon and its detailed data via several ways (onClick image/name, searchInput)
