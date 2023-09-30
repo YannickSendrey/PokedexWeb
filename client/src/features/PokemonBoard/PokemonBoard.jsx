@@ -62,6 +62,10 @@ export const PokemonBoard = () => {
 					<option value='hoenn'>Hoenn</option>
 					<option value='sinnoh'>Sinnoh</option>
 					<option value='unys'>Unys</option>
+					<option value='kalos'>Kalos</option>
+					<option value='alola'>Alola</option>
+					<option value='galar'>Galar</option>
+					<option value='paldea'>Paldea</option>
 				</select>
 				<p className={styles.main_select_text}>
 					Hello{' '}
